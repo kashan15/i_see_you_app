@@ -24,6 +24,8 @@
 //
 // }
 
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
@@ -44,8 +46,9 @@ class _SplashScreenState extends State<SplashScreen> {
     goto();
   }
   goto()async{
-    await Future.delayed(const Duration(seconds: 7));
-    Get.toNamed(kOnboardingScreen);
+     Timer(Duration(seconds: 7), () async{
+       Get.toNamed(kOnboardingScreen);
+    });
   }
   @override
   Widget build(BuildContext context) {

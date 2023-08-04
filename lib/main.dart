@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:i_see_you/route_management/route_management.dart';
+import 'package:i_see_you/utils/color_utils.dart';
 import 'package:i_see_you/utils/route_utils.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             title: 'I See You',
             theme: ThemeData(
+              primarySwatch: primaryColorSwatch,
               fontFamily:'Nexa',
             ),
             //Default theme

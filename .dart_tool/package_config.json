@@ -152,6 +152,12 @@
       "languageVersion": "2.16"
     },
     {
+      "name": "gradient_borders",
+      "rootUri": "file:///C:/Users/Flutter/AppData/Local/Pub/Cache/hosted/pub.dev/gradient_borders-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "intl",
       "rootUri": "file:///C:/Users/Flutter/AppData/Local/Pub/Cache/hosted/pub.dev/intl-0.18.1",
       "packageUri": "lib/",
@@ -356,7 +362,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-08-03T17:51:45.794202Z",
+  "generated": "2023-08-04T18:24:07.211254Z",
   "generator": "pub",
   "generatorVersion": "2.19.4"
 }

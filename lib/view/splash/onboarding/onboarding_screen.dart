@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -8,8 +9,10 @@ import 'package:introduction_screen/introduction_screen.dart';
 import '../../../controller/onboarding_controller.dart';
 
 
-class InitialDetailScreen extends GetView<InitialDetailScreenController> {
-  InitialDetailScreen({Key? key}) : super(key: key);
+class OnboardScreen extends GetView<OnboardScreenController> {
+  OnboardScreen({Key? key}) : super(key: key);
+
+  String obj = '';
 
   var pageDecoration = const PageDecoration(
       // titleTextStyle: TextStyle(fontSize: 28.0, fontWeight: FontWeight.w700),
@@ -37,8 +40,9 @@ class InitialDetailScreen extends GetView<InitialDetailScreenController> {
 
   );
 
-  Widget _buildFullscreenImage() {
-    return Image.asset(
+  Widget _buildFullscreenImage(BuildContext context) {
+    return
+      Image.asset(
       ImageUtils.splashImage,
       fit: BoxFit.cover,
       height: double.infinity,
@@ -46,6 +50,36 @@ class InitialDetailScreen extends GetView<InitialDetailScreenController> {
       alignment: Alignment.center,
     );
   }
+
+  Widget? _topLogo(BuildContext context){
+    return testFunction(context);
+  }
+
+ testFunction(BuildContext context){
+    if(obj.isNotEmpty){
+      Future.delayed(Duration(seconds: 2), () {
+        Positioned(
+            top:Get.height*0.15,
+            child:
+            Image.asset('assets/images/cocacola.png',
+              height: Get.height * 0.1,
+            )
+        );
+      });
+    }
+}
+
+
+
+  // Future backgroundImage() async{
+  //   Image.asset(
+  //     ImageUtils.splashImage,
+  //     fit: BoxFit.cover,
+  //     height: double.infinity,
+  //     width: double.infinity,
+  //     alignment: Alignment.center,
+  //   );
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -80,9 +114,9 @@ class InitialDetailScreen extends GetView<InitialDetailScreenController> {
             IntroductionScreen(
             key: controller.introKey,
             globalBackgroundColor: Colors.white,
-            dotsDecorator: DotsDecorator(
-                activeColor: Colors.black,
-                color: Colors.orange.shade100
+            dotsDecorator: const DotsDecorator(
+                activeColor: Colors.redAccent,
+                color: Colors.white
             ),
 
             pages: [
@@ -112,19 +146,23 @@ class InitialDetailScreen extends GetView<InitialDetailScreenController> {
               // ),
 
               PageViewModel(
-                image: Stack(
+                image:
+                Stack(
                   alignment: Alignment.center,
                   children: [
-                    _buildFullscreenImage(),
+                    _buildFullscreenImage(context),
                     Positioned(
                         top:Get.height*0.15,
-                        child: Image.asset('assets/images/cocacola.png',
+                        child:
+                        Image.asset('assets/images/cocacola.png',
                         height: Get.height * 0.1,
                         )
                     ),
+                    // _topLogo(context),
                     Positioned(
                         top:Get.height*0.375,
                         child: _buildImage('onboard1.png')),
+
                   ],
                 ),
                  decoration: pageDecoration,
@@ -144,10 +182,11 @@ class InitialDetailScreen extends GetView<InitialDetailScreenController> {
               ),
 
               PageViewModel(
-                image: Stack(
+                image:
+                Stack(
                   alignment: Alignment.center,
                   children: [
-                    _buildFullscreenImage(),
+                    _buildFullscreenImage(context),
                     Positioned(
                         top:Get.height*0.125,
                         child: Image.asset('assets/images/cocacola.png',
@@ -176,10 +215,11 @@ class InitialDetailScreen extends GetView<InitialDetailScreenController> {
               ),
 
               PageViewModel(
-                image: Stack(
+                image:
+                Stack(
                   alignment: Alignment.center,
                   children: [
-                    _buildFullscreenImage(),
+                    _buildFullscreenImage(context),
                     Positioned(
                         top:Get.height*0.15,
                         child: Image.asset('assets/images/cocacola.png',
@@ -208,10 +248,11 @@ class InitialDetailScreen extends GetView<InitialDetailScreenController> {
               ),
 
               PageViewModel(
-                image: Stack(
+                image:
+                Stack(
                   alignment: Alignment.center,
                   children: [
-                    _buildFullscreenImage(),
+                    _buildFullscreenImage(context),
                     Positioned(
                         top:Get.height*0.125,
                         child: Image.asset('assets/images/cocacola.png',
@@ -240,10 +281,11 @@ class InitialDetailScreen extends GetView<InitialDetailScreenController> {
               ),
 
               PageViewModel(
-                image: Stack(
+                image:
+                Stack(
                   alignment: Alignment.center,
                   children: [
-                    _buildFullscreenImage(),
+                    _buildFullscreenImage(context),
                     Positioned(
                         top:Get.height*0.15,
                         child: Image.asset('assets/images/cocacola.png',
@@ -272,10 +314,11 @@ class InitialDetailScreen extends GetView<InitialDetailScreenController> {
               ),
 
               PageViewModel(
-                image: Stack(
+                image:
+                Stack(
                   alignment: Alignment.center,
                   children: [
-                    _buildFullscreenImage(),
+                    _buildFullscreenImage(context),
                     Positioned(
                         top:Get.height*0.15,
                         child: Image.asset('assets/images/cocacola.png',
@@ -314,7 +357,7 @@ class InitialDetailScreen extends GetView<InitialDetailScreenController> {
             nextFlex: 0,
             showBackButton: false,
             back: const Icon(Icons.arrow_back),
-            skip: const Text('Skip', style: TextStyle(fontWeight: FontWeight.w600,color:Colors.grey)),
+            skip: const Text('Skip', style: TextStyle(fontWeight: FontWeight.w600,color:Colors.yellow)),
             next: Text('Next', style: TextStyle(fontWeight: FontWeight.w600,color:Colors.green)),
             done: Text('Done', style: TextStyle(fontWeight: FontWeight.w600,color:Colors.green)),
             curve: Curves.fastLinearToSlowEaseIn,
