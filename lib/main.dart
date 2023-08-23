@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:i_see_you/route_management/route_management.dart';
 import 'package:i_see_you/utils/color_utils.dart';
+import 'package:i_see_you/utils/image_utils.dart';
 import 'package:i_see_you/utils/route_utils.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -11,6 +12,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 String? route;
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
+
   runApp( MyApp());
 }
 
@@ -20,6 +22,7 @@ class MyApp extends StatelessWidget {
   @override
 
   Widget build(BuildContext context) {
+    precacheImage(AssetImage(ImageUtils.splashImage), context);
     return ScreenUtilInit(
         designSize: const Size(360, 690),
         builder: (context, child) {

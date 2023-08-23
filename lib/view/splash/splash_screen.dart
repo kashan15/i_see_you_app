@@ -46,8 +46,8 @@ class _SplashScreenState extends State<SplashScreen> {
     goto();
   }
   goto()async{
-     Timer(Duration(seconds: 7), () async{
-       Get.toNamed(kOnboardingScreen);
+     Timer(Duration(seconds: 4), () async{
+       await Get.toNamed(kOnboardingScreen);
     });
   }
   @override
@@ -58,7 +58,8 @@ class _SplashScreenState extends State<SplashScreen> {
         width: Get.width,
         color: Colors.white,
         child: Image.asset(
-          ImageUtils.splashAnimated,
+          // ImageUtils.splashAnimated,
+          ImageUtils.animatedSplash2,
           width: double.infinity,
           fit: BoxFit.fill,
         ),

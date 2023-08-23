@@ -1,3 +1,4 @@
+import 'package:bouncing_button/bouncing_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:gradient_borders/box_borders/gradient_box_border.dart';
@@ -105,7 +106,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       Flexible(
                         child: TextFormField(
                           decoration: InputDecoration(
-                            contentPadding: EdgeInsets.all(10.0),
+                            contentPadding: EdgeInsets.fromLTRB(Get.width * 0.02, Get.height * 0.0015, Get.width * 0.01, Get.height * 0.0015),
                             hintText: 'john11@gmail.com',
                             hintStyle: TextStyle(
                                 color: gradient2,
@@ -181,7 +182,13 @@ class _SignupScreenState extends State<SignupScreen> {
                         child: TextFormField(
                           obscureText: obscuretext,
                           decoration: InputDecoration(
-                            contentPadding: EdgeInsets.all(10.0),
+                            // contentPadding: EdgeInsets.all(10.0),
+                              contentPadding: EdgeInsets.fromLTRB(
+                                  Get.width * 0.02,
+                                  Get.height * 0.0125,
+                                  Get.width * 0.01,
+                                  Get.height * 0.0125
+                              ),
                             hintText: '',
                             hintStyle: TextStyle(
                                 color: gradient2,
@@ -268,7 +275,13 @@ class _SignupScreenState extends State<SignupScreen> {
                         child: TextFormField(
                           obscureText: obscuretext2,
                           decoration: InputDecoration(
-                            contentPadding: EdgeInsets.all(10.0),
+                            // contentPadding: EdgeInsets.all(10.0),
+                              contentPadding: EdgeInsets.fromLTRB(
+                                  Get.width * 0.02,
+                                  Get.height * 0.0125,
+                                  Get.width * 0.01,
+                                  Get.height * 0.0125
+                              ),
                             hintText: '',
                             hintStyle: TextStyle(
                                 color: gradient2,
@@ -302,30 +315,71 @@ class _SignupScreenState extends State<SignupScreen> {
                 ),
 
                 SizedBox(height: Get.height * 0.125,),
-                CustomButton(
-                  isSelected: false,
-                  title: 'Signup',
-                  margin: EdgeInsets.symmetric(
-                      horizontal: Get.width * 0.15
-                  ),
-                  padding: EdgeInsets.symmetric(
-                      vertical: Get.height * 0.015
-                  ),
-                  borderRadius: Get.width * 0.175,
-                  borderColor: Colors.white,
-                  gradient: const LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      gradient1,
-                      gradient2,
-                      gradient3
-                    ], // Change these colors as per your requirement
-                  ),
-                  textColor: Colors.white,
-                  fontFamily: montserratSemiBold,
-                  fontSize: Get.height * 0.02,
+
+                BouncingButton(
+                    onPressed: ()async{
+                      // Future.delayed(Duration(seconds: 1), (){
+                      //   Get.toNamed(kSignupScreen);
+                      // });
+                    },
+                    child:
+                    Container(
+                      width: 260,
+                      padding: const EdgeInsets.symmetric(vertical: 10),
+                      decoration: BoxDecoration(
+                        gradient: const LinearGradient(
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                          colors: [
+                            gradient1,
+                            gradient2,
+                            gradient3
+                          ], // Change these colors as per your requirement
+                        ),
+                        borderRadius: BorderRadius.circular(Get.width * 0.08),
+                        border: Border.all(color: Colors.white,
+                            width: 2
+                        ),
+                      ),
+                      child: Center(
+                        child: Text(
+                          "Signup",
+                          style: TextStyle(
+                              fontSize: 18,
+                              letterSpacing: 2,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    )
+
+
                 ),
+
+                // CustomButton(
+                //   isSelected: false,
+                //   title: 'Signup',
+                //   margin: EdgeInsets.symmetric(
+                //       horizontal: Get.width * 0.15
+                //   ),
+                //   padding: EdgeInsets.symmetric(
+                //       vertical: Get.height * 0.015
+                //   ),
+                //   borderRadius: Get.width * 0.175,
+                //   borderColor: Colors.white,
+                //   gradient: const LinearGradient(
+                //     begin: Alignment.topCenter,
+                //     end: Alignment.bottomCenter,
+                //     colors: [
+                //       gradient1,
+                //       gradient2,
+                //       gradient3
+                //     ], // Change these colors as per your requirement
+                //   ),
+                //   textColor: Colors.white,
+                //   fontFamily: montserratSemiBold,
+                //   fontSize: Get.height * 0.02,
+                // ),
 
 
               ],

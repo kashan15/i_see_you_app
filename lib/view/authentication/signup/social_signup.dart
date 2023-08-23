@@ -1,3 +1,4 @@
+import 'package:bouncing_button/bouncing_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:i_see_you/components/custom_buttons.dart';
@@ -164,33 +165,75 @@ class SocialSignup extends GetView<HomeScreenController> {
                 ],
               ),
               SizedBox(height: Get.height * 0.025,),
-              CustomButton(
-                onTap: (){
-                  Get.toNamed(kSignupScreen);
-                },
-                isSelected: false,
-                title: 'Signup',
-                margin: EdgeInsets.symmetric(
-                    horizontal: Get.width * 0.15
-                ),
-                padding: EdgeInsets.symmetric(
-                    vertical: Get.height * 0.015
-                ),
-                borderRadius: Get.width * 0.175,
-                borderColor: Colors.white,
-                gradient: const LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    gradient1,
-                    gradient2,
-                    gradient3
-                  ], // Change these colors as per your requirement
-                ),
-                textColor: Colors.white,
-                fontFamily: montserratSemiBold,
-                fontSize: Get.height * 0.02,
+
+              BouncingButton(
+                  onPressed: ()async{
+                    Future.delayed(Duration(seconds: 1), (){
+                      Get.toNamed(kSignupScreen);
+                    });
+                  },
+                  child:
+                  Container(
+                    width: 260,
+                    padding: const EdgeInsets.symmetric(vertical: 10),
+                    decoration: BoxDecoration(
+                      gradient: const LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          gradient1,
+                          gradient2,
+                          gradient3
+                        ], // Change these colors as per your requirement
+                      ),
+                      borderRadius: BorderRadius.circular(Get.width * 0.08),
+                      border: Border.all(color: Colors.white,
+                          width: 2
+                      ),
+                    ),
+                    child: Center(
+                      child: Text(
+                        "Signup",
+                        style: TextStyle(
+                            fontSize: 18,
+                            letterSpacing: 2,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  )
+
+
               ),
+
+              // CustomButton(
+              //   onTap: (){
+              //     Get.toNamed(kSignupScreen);
+              //   },
+              //   isSelected: false,
+              //   title: 'Signup',
+              //   margin: EdgeInsets.symmetric(
+              //       horizontal: Get.width * 0.15
+              //   ),
+              //   padding: EdgeInsets.symmetric(
+              //       vertical: Get.height * 0.015
+              //   ),
+              //   borderRadius: Get.width * 0.175,
+              //   borderColor: Colors.white,
+              //   gradient: const LinearGradient(
+              //     begin: Alignment.topCenter,
+              //     end: Alignment.bottomCenter,
+              //     colors: [
+              //       gradient1,
+              //       gradient2,
+              //       gradient3
+              //     ], // Change these colors as per your requirement
+              //   ),
+              //   textColor: Colors.white,
+              //   fontFamily: montserratSemiBold,
+              //   fontSize: Get.height * 0.02,
+              // ),
+
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

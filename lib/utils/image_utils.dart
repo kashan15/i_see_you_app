@@ -14,6 +14,7 @@ class ImageUtils{
   static const String logo = 'assets/images/logo.png';
   static const String logo1 = 'assets/images/logo1.png';
   static const String splashAnimated = 'assets/images/splashAnimated.gif';
+  static const String animatedSplash2 = 'assets/images/animatedSplash2.gif';
   static const String onboard1 = 'assets/images/onboard1.png';
 
 }

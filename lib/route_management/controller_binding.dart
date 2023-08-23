@@ -9,7 +9,7 @@ class ControllerBinding extends Bindings {
   @override
   void dependencies() {
     Get.lazyPut(() => SplashScreenController());
-    Get.lazyPut(() => OnboardScreenController());
+    // Get.lazyPut(() => OnboardScreenController());
     Get.lazyPut(() => HomeScreenController());
 
   }
