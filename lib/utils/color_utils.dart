@@ -65,8 +65,11 @@ const Color customGreyColor = Colors.grey;
 const Color textFieldColor = Color(0xfff2f3f8);
 
 
-
+const Color gridButton = Color(0xffAA40FC);
 const Color gridColor = Color(0xffF3F3F3);
+
+const Color videoContainerColor = Color(0xff5957C4);
+const Color uploadColor = Color(0xff590051);
 
 int kPrimaryColor = 0xffeb751f;
 int kSecondaryColor = 0xffeb8f4df0;
