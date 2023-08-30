@@ -19,11 +19,11 @@ class DancerTypeScreen extends GetView<DancerTypeScreenController> {
   List itemList = [
     {
       "name": "Solo",
-      "image": ImageUtils.a1
+      "image": ImageUtils.c11
     },
     {
       "name": "Duo/Trio",
-      "image": ImageUtils.a2
+      "image": ImageUtils.c11
     },
   ];
   @override
@@ -34,7 +34,8 @@ class DancerTypeScreen extends GetView<DancerTypeScreenController> {
           width: Get.width,
           decoration: const BoxDecoration(
               image: DecorationImage(image: AssetImage(
-                  ImageUtils.splashImage
+                  // ImageUtils.splashImage
+                  ImageUtils.newBackground1
               ),
                   fit: BoxFit.fill
               )
@@ -232,7 +233,7 @@ class DancerTypeScreen extends GetView<DancerTypeScreenController> {
                         decoration: const BoxDecoration(
                             color: Colors.white,
                             image: DecorationImage(image: AssetImage(
-                              ImageUtils.a14,
+                              ImageUtils.c11,
                             ),
                                 fit: BoxFit.cover
                             )

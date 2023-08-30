@@ -63,7 +63,8 @@ class DancerScreen extends GetView<DancerScreenController> {
           width: Get.width,
           decoration: const BoxDecoration(
               image: DecorationImage(image: AssetImage(
-                  ImageUtils.splashImage
+                  // ImageUtils.splashImage
+                  ImageUtils.newBackground1
               ),
                   fit: BoxFit.fill
               )
@@ -144,7 +145,7 @@ class DancerScreen extends GetView<DancerScreenController> {
                         decoration: const BoxDecoration(
                             color: Colors.white,
                             image: DecorationImage(image: AssetImage(
-                              ImageUtils.a14,
+                              ImageUtils.c11,
                             ),
                                 fit: BoxFit.cover
                             )
@@ -216,9 +217,9 @@ class DancerScreen extends GetView<DancerScreenController> {
                             horizontal: Get.width * 0.01),
                         height: Get.height * 0.125,
                         decoration: const BoxDecoration(
-                            color: Colors.red,
+                            color: Colors.transparent,
                             image: DecorationImage(image: AssetImage(
-                              ImageUtils.a14,
+                              ImageUtils.c11,
                             ),
                                 fit: BoxFit.cover
                             )

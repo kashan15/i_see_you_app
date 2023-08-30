@@ -29,6 +29,12 @@ MaterialColor(accentColorValue, <int, Color>{
 const int accentColorValue = 0xFFFB2576;
 // const  accentColor = Color(0xFFFB2576);
 
+const MaterialColor accentColorSwatch2 =
+MaterialColor(accentColorValue, <int, Color>{
+  100: Color(0xff5E33C5),
+  200: Color(0xff8F70B9),
+});
+
 
 
 final textColorPurple = primaryColorSwatch.shade200; //Color(0Xff9f7fb7);
@@ -70,6 +76,10 @@ const Color gridColor = Color(0xffF3F3F3);
 
 const Color videoContainerColor = Color(0xff5957C4);
 const Color uploadColor = Color(0xff590051);
+
+const Color gradientIconColor1 = Color(0xff5E33C5);
+const Color gradientIconColor2 = Color(0xff8F70B9);
+
 
 int kPrimaryColor = 0xffeb751f;
 int kSecondaryColor = 0xffeb8f4df0;

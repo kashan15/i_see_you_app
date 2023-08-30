@@ -20,40 +20,36 @@ class IAmScreen extends GetView<IAmScreenController> {
   List itemList = [
     {
       "name": "Dancer",
-      "image": ImageUtils.a1
+      "image": ImageUtils.c1
     },
     {
       "name": "Choreographer",
-      "image": ImageUtils.a2
+      "image": ImageUtils.c2
     },{
       "name": "Adjudicator",
-      "image": ImageUtils.a3
+      "image": ImageUtils.c3
     },{
       "name": "School",
-      "image": ImageUtils.a4
+      "image": ImageUtils.c4
     },{
       "name": "Parents",
-      "image": ImageUtils.a5
+      "image": ImageUtils.c5
     },{
       "name": "Cheerleaders",
-      "image": ImageUtils.a6
+      "image": ImageUtils.c6
     },{
       "name": "Wellness",
-      "image": ImageUtils.a7
+      "image": ImageUtils.c7
     },{
       "name": "Scout",
-      "image": ImageUtils.a8
+      "image": ImageUtils.c8
     },{
       "name": "Advertiser",
-      "image": ImageUtils.a9
+      "image": ImageUtils.c9
     },
     {
       "name": "Media",
-      "image": ImageUtils.a10
-    },
-    {
-      "name": "Media",
-      "image": ImageUtils.a11
+      "image": ImageUtils.c10
     },
   ];
   @override
@@ -64,7 +60,8 @@ class IAmScreen extends GetView<IAmScreenController> {
           width: Get.width,
           decoration: const BoxDecoration(
               image: DecorationImage(image: AssetImage(
-                  ImageUtils.splashImage
+                  // ImageUtils.splashImage
+                  ImageUtils.newBackground1
               ),
                   fit: BoxFit.fill
               )
@@ -116,7 +113,7 @@ class IAmScreen extends GetView<IAmScreenController> {
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     // crossAxisCount: columnsCount,
                       crossAxisCount: 2,
-                      childAspectRatio: Get.width*1.35 / Get.height*1.3,
+                      childAspectRatio: Get.width*1.275 / Get.height*1.3,
                       crossAxisSpacing: Get.width * 0.08,
                       mainAxisSpacing: Get.height * 0.05
                   ),
@@ -135,19 +132,25 @@ class IAmScreen extends GetView<IAmScreenController> {
                             Row(
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children:[
-                                  CircleAvatar(
-                                    radius: Get.width * 0.0275,
-                                    backgroundColor: Colors.green,
-                                    child:
-                                    Center(
-                                      child: Icon(
-                                        Icons.check,
-                                        size: Get.height * 0.02,
-                                        color: Colors.white,
-                                      ),
+                                  // CircleAvatar(
+                                  //   radius: Get.width * 0.0275,
+                                  //   backgroundColor: Colors.green,
+                                  //   child:
+                                  //   Center(
+                                  //     child: Icon(
+                                  //       Icons.check,
+                                  //       size: Get.height * 0.02,
+                                  //       color: Colors.white,
+                                  //     ),
+                                  //   ),
+                                  // ),
+                                  SizedBox(
+                                    height: Get.height * 0.04,
+                                    child: Image.asset(
+                                      ImageUtils.checkIconUnselected,
                                     ),
                                   ),
-                                  SizedBox(width: Get.width * 0.02,),
+                                  // SizedBox(width: Get.width * 0.02,),
 
                                 ]),
                             Container(
@@ -155,11 +158,11 @@ class IAmScreen extends GetView<IAmScreenController> {
                                   horizontal: Get.width * 0.01),
                               height: Get.height * 0.125,
                               decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Colors.transparent,
                                   image: DecorationImage(image: AssetImage(
                                     itemList[index]['image'],
                                   ),
-                                      fit: BoxFit.cover
+                                      fit: BoxFit.contain
                                   )
                               ),
                             ),
@@ -243,11 +246,11 @@ class IAmScreen extends GetView<IAmScreenController> {
                             horizontal: Get.width * 0.01),
                         height: Get.height * 0.125,
                         decoration: const BoxDecoration(
-                            color: Colors.red,
+                            color: Colors.white,
                             image: DecorationImage(image: AssetImage(
-                              ImageUtils.a14,
+                              ImageUtils.c11,
                             ),
-                                fit: BoxFit.cover
+                                fit: BoxFit.contain
                             )
                         ),
                       ),

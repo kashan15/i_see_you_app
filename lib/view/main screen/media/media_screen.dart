@@ -19,11 +19,11 @@ class MediaScreen extends GetView<MediaScreenController> {
   List itemList = [
     {
       "name": "Videographer",
-      "image": ImageUtils.a1
+      "image": ImageUtils.c11
     },
     {
       "name": "Photographer",
-      "image": ImageUtils.a2
+      "image": ImageUtils.c11
     },
   ];
   @override
@@ -34,7 +34,8 @@ class MediaScreen extends GetView<MediaScreenController> {
           width: Get.width,
           decoration: const BoxDecoration(
               image: DecorationImage(image: AssetImage(
-                  ImageUtils.splashImage
+                  // ImageUtils.splashImage
+                  ImageUtils.newBackground1
               ),
                   fit: BoxFit.fill
               )

@@ -4,12 +4,14 @@ import 'package:i_see_you/controller/dance_location_controller.dart';
 import 'package:i_see_you/controller/dance_type_controller.dart';
 import 'package:i_see_you/controller/dancer_screen_controller.dart';
 import 'package:i_see_you/controller/dancer_type_controller.dart';
+import 'package:i_see_you/controller/edit_my_profile_controller.dart';
 import 'package:i_see_you/controller/enter_video_detail_controller.dart';
 import 'package:i_see_you/controller/home_screen_controller.dart';
 import 'package:i_see_you/controller/i_am_screen_controller.dart';
 import 'package:i_see_you/controller/latin_screen_controller.dart';
 import 'package:i_see_you/controller/level_screen_controller.dart';
 import 'package:i_see_you/controller/media_screen_controller.dart';
+import 'package:i_see_you/controller/navbar_controller.dart';
 import 'package:i_see_you/controller/onboarding_controller.dart';
 import 'package:i_see_you/controller/upload_bachata_video_controller.dart';
 import 'package:i_see_you/controller/upload_profile_picture_controller.dart';
@@ -27,6 +29,7 @@ class ControllerBinding extends Bindings {
   void dependencies() {
     Get.lazyPut(() => SplashScreenController());
     Get.lazyPut(() => HomeScreenController());
+    Get.lazyPut(() => NavBarController());
     Get.lazyPut(() => CompetitiveScreenController());
     Get.lazyPut(() => DanceTypeScreenController());
     Get.lazyPut(() => DancerTypeScreenController());
@@ -42,6 +45,6 @@ class ControllerBinding extends Bindings {
     Get.lazyPut(() => UploadReggaetonVideoController());
     Get.lazyPut(() => VideoDetailController());
     Get.lazyPut(() => UploadProfilePictureController());
-
+    Get.lazyPut(() => EditMyProfileController());
   }
 }

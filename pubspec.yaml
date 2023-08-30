@@ -38,7 +38,7 @@ dependencies:
   get: ^4.6.5
   intl: ^0.18.0
   flutter_screenutil:
-  country_picker:
+  country_picker: ^2.0.1
   flutter_picker:
   get_storage:
   shared_preferences:
@@ -46,6 +46,8 @@ dependencies:
   gradient_borders: ^1.0.0
   flutter_animated_button: ^2.0.3
   bouncing_button: ^0.0.1+2
+  persistent_bottom_nav_bar: ^5.0.2
+
 
 
 

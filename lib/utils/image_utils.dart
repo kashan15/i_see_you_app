@@ -11,12 +11,19 @@ class ImageUtils{
   static const  cameraIcon = 'assets/icons/cameraIcon.png';
   static const  galleryIcon = 'assets/icons/galleryIcon.png';
   static const  uploadIcon = 'assets/icons/uploadIcon.png';
+  static const  homeIcon = 'assets/icons/homeIcon.png';
+  static const  favoriteIcon = 'assets/icons/favoriteIcon.png';
+  static const  homeIcon2 = 'assets/icons/homeIcon2.png';
+  static const  searchIcon = 'assets/icons/searchIcon.png';
+  static const  checkIconSelected = 'assets/icons/checkIcon1.png';
+  static const  checkIconUnselected = 'assets/icons/checkIcon2.png';
 
   /// Images
   static const String splashImage = 'assets/images/splashImage.png';
+  static const String newBackground1 = 'assets/images/newBackground1.gif';
   static const String logo = 'assets/images/logo.png';
   static const String logo1 = 'assets/images/logo1.png';
-  static const String splashAnimated = 'assets/images/splashAnimated.gif';
+  static const String splashAnimated2 = 'assets/images/splashAnimated2.gif';
   static const String newSplash = 'assets/images/newSplash.gif';
   static const String animatedSplash2 = 'assets/images/animatedSplash2.gif';
   static const String onboard1 = 'assets/images/onboard1.png';
@@ -43,6 +50,17 @@ class ImageUtils{
   static const String b2 = 'assets/images/b2.png';
   static const String b3 = 'assets/images/b3.png';
   static const String b4 = 'assets/images/b4.png';
+  static const String c1 = 'assets/images/c1.png';
+  static const String c2 = 'assets/images/c2.png';
+  static const String c3 = 'assets/images/c3.png';
+  static const String c4 = 'assets/images/c4.png';
+  static const String c5 = 'assets/images/c5.png';
+  static const String c6 = 'assets/images/c6.png';
+  static const String c7 = 'assets/images/c7.png';
+  static const String c8 = 'assets/images/c8.png';
+  static const String c9 = 'assets/images/c9.png';
+  static const String c10 = 'assets/images/c10.png';
+  static const String c11 = 'assets/images/c11.png';
 
 }
 

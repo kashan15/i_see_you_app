@@ -6,6 +6,7 @@ import 'package:i_see_you/components/custom_buttons.dart';
 import 'package:i_see_you/components/text_widget.dart';
 import 'package:i_see_you/utils/color_utils.dart';
 import 'package:i_see_you/utils/font_utils.dart';
+import 'package:i_see_you/utils/route_utils.dart';
 import 'package:i_see_you/utils/theme.dart';
 
 import '../../../controller/home_screen_controller.dart';
@@ -32,7 +33,8 @@ class _SignupScreenState extends State<SignupScreen> {
             width: Get.width,
             decoration: const BoxDecoration(
                 image: DecorationImage(image: AssetImage(
-                    ImageUtils.splashImage
+                    // ImageUtils.splashImage
+                  ImageUtils.newBackground1
                 ),
                     fit: BoxFit.fill
                 )
@@ -318,9 +320,9 @@ class _SignupScreenState extends State<SignupScreen> {
 
                 BouncingButton(
                     onPressed: ()async{
-                      // Future.delayed(Duration(seconds: 1), (){
-                      //   Get.toNamed(kSignupScreen);
-                      // });
+                      Future.delayed(Duration(seconds: 1), (){
+                        Get.toNamed(kLoginScreen);
+                      });
                     },
                     child:
                     Container(

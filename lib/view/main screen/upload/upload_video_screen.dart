@@ -140,7 +140,8 @@ class UploadVideoScreen extends GetView<UploadScreenController> {
           width: Get.width,
           decoration: const BoxDecoration(
               image: DecorationImage(image: AssetImage(
-                  ImageUtils.splashImage
+                  // ImageUtils.splashImage
+                  ImageUtils.newBackground1
               ),
                   fit: BoxFit.fill
               )

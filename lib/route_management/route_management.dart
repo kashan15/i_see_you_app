@@ -1,12 +1,14 @@
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
+import 'package:i_see_you/components/custom_navbar1.dart';
 import 'package:i_see_you/view/home/home_screen.dart';
 import 'package:i_see_you/view/main%20screen/dance/dance_location.dart';
 import 'package:i_see_you/view/main%20screen/dance/latin_screen.dart';
 import 'package:i_see_you/view/main%20screen/upload/upload_bachata_video.dart';
 import 'package:i_see_you/view/main%20screen/upload/upload_reggaeton_video.dart';
 import 'package:i_see_you/view/main%20screen/upload/video/enter_video_details.dart';
+import 'package:i_see_you/view/profile/edit_my_profile.dart';
 import 'package:i_see_you/view/profile/upload_profile_picture.dart';
 import 'package:i_see_you/view/splash/onboarding/onboarding_screen.dart';
 import 'package:i_see_you/view/splash/splash_screen.dart';
@@ -101,6 +103,16 @@ class RouteManagement {
       GetPage(
         name:   kUploadFrom,
         page: () => UploadFrom(),
+        binding: ControllerBinding(),
+      ),
+      GetPage(
+        name:   kNavBar,
+        page: () => const BottomNavBar(),
+        binding: ControllerBinding(),
+      ),
+      GetPage(
+        name:   kEditMyProfile,
+        page: () => EditMyProfile(),
         binding: ControllerBinding(),
       ),
       GetPage(

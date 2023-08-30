@@ -20,3 +20,5 @@ const String kUploadReggaetonVideo = "/UPLOAD_REGGAETON_SCREEN";
 const String kVideoDetails = "/VIDEO_DETAIL_SCREEN";
 const String kUploadProfilePicture = "/UPLOAD_PROFILE_PICTURE_SCREEN";
 const String kUploadFrom = "/UPLOAD_FROM_SCREEN";
+const String kEditMyProfile = "/EDIT_MY_PROFILE_SCREEN";
+const String kNavBar = "/EDIT_MY_PROFILE_SCREEN";
