@@ -247,7 +247,9 @@ class VideoDetailScreen extends GetView<VideoDetailController> {
                             ),
                             SizedBox(height: Get.height * 0.02,),
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: Get.width * 0.025),
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: Get.width * 0.035
+                              ),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(
@@ -275,7 +277,7 @@ class VideoDetailScreen extends GetView<VideoDetailController> {
                               child: CustomTextField1(
                                 textEditingController: schoolController,
                                 textColor: gradient2,
-                                title: 'John Rambo',
+                                title: 'John Rambo Smith',
                                 fontSize: Get.height * 0.0125,
                                 fontFamily: montserratSemiBold,
                                 inputBorder: InputBorder.none,
@@ -284,7 +286,8 @@ class VideoDetailScreen extends GetView<VideoDetailController> {
 
                             SizedBox(height: Get.height * 0.02,),
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: Get.width * 0.025),
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: Get.width * 0.035),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(
@@ -321,7 +324,8 @@ class VideoDetailScreen extends GetView<VideoDetailController> {
 
                             SizedBox(height: Get.height * 0.02,),
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: Get.width * 0.025),
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: Get.width * 0.035),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(
@@ -358,7 +362,8 @@ class VideoDetailScreen extends GetView<VideoDetailController> {
 
                             SizedBox(height: Get.height * 0.02,),
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: Get.width * 0.025),
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: Get.width * 0.035),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(
@@ -395,7 +400,8 @@ class VideoDetailScreen extends GetView<VideoDetailController> {
 
                             SizedBox(height: Get.height * 0.02,),
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: Get.width * 0.025),
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: Get.width * 0.035),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(
@@ -478,7 +484,7 @@ class VideoDetailScreen extends GetView<VideoDetailController> {
                               child: CustomTextField1(
                                 textEditingController: schoolController,
                                 textColor: gradient2,
-                                title: 'John Rambo',
+                                title: 'John Rambo Smith',
                                 fontSize: Get.height * 0.0125,
                                 fontFamily: montserratSemiBold,
                                 inputBorder: InputBorder.none,
@@ -487,7 +493,8 @@ class VideoDetailScreen extends GetView<VideoDetailController> {
 
                             SizedBox(height: Get.height * 0.02,),
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: Get.width * 0.025),
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: Get.width * 0.035),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(
@@ -524,7 +531,8 @@ class VideoDetailScreen extends GetView<VideoDetailController> {
 
                             SizedBox(height: Get.height * 0.02,),
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: Get.width * 0.025),
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: Get.width * 0.035),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(
@@ -561,7 +569,8 @@ class VideoDetailScreen extends GetView<VideoDetailController> {
 
                             SizedBox(height: Get.height * 0.02,),
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: Get.width * 0.025),
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: Get.width * 0.035),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(
@@ -598,7 +607,8 @@ class VideoDetailScreen extends GetView<VideoDetailController> {
 
                             SizedBox(height: Get.height * 0.02,),
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: Get.width * 0.025),
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: Get.width * 0.035),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(

@@ -61,6 +61,26 @@ class ImageUtils{
   static const String c9 = 'assets/images/c9.png';
   static const String c10 = 'assets/images/c10.png';
   static const String c11 = 'assets/images/c11.png';
+  static const String danceLocationPic1 = 'assets/images/danceLocationPic1.png';
+  static const String danceLocationPic2 = 'assets/images/danceLocationPic2.png';
+  static const String dancer1 = 'assets/images/dancer1.png';
+  static const String dancer2 = 'assets/images/dancer2.png';
+  static const String dancer3 = 'assets/images/dancer3.png';
+  static const String dancer4 = 'assets/images/dancer4.png';
+  static const String dancer5 = 'assets/images/dancer5.png';
+  static const String wellness1 = 'assets/images/wellness1.png';
+  static const String wellness2 = 'assets/images/wellness2.png';
+  static const String wellness3 = 'assets/images/wellness3.png';
+  static const String wellness4 = 'assets/images/wellness4.png';
+  static const String media1 = 'assets/images/media1.png';
+  static const String media2 = 'assets/images/media2.png';
+  static const String media3 = 'assets/images/media3.png';
+  static const String media4 = 'assets/images/media4.png';
+  static const String level1 = 'assets/images/level1.png';
+  static const String level2 = 'assets/images/level2.png';
+  static const String level3 = 'assets/images/level3.png';
+  static const String level4 = 'assets/images/level4.png';
+  static const String level5 = 'assets/images/level5.png';
 
 }
 

@@ -76,7 +76,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 SizedBox(height: Get.height * 0.01,),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: Get.width * 0.015),
+                 // padding: EdgeInsets.symmetric(horizontal: Get.width * 0.075,),
+                  //padding: EdgeInsets.all(10),
                   margin: EdgeInsets.symmetric(horizontal: Get.width * 0.075),
                   height: Get.height * 0.065,
                   decoration: BoxDecoration(
@@ -108,13 +109,28 @@ class _LoginScreenState extends State<LoginScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      SizedBox(width: Get.width * 0.06,),
+                      // SizedBox(width: Get.width * 0.06,),
                       Flexible(
                           child: CustomTextField(
-                            textEditingController: email,
-                            textColor: gradient2,
-                            title: 'john@gmail.com',
-                            inputBorder: InputBorder.none,
+                              textEditingController: email,
+                              title: 'john@gmail.com',
+                              textColor: gradient2,
+                              inputBorder: InputBorder.none,
+                              prefixIcon: const Icon(Icons.email, color: gradient1,),
+                              suffixIcon: GestureDetector(
+                                  onTap: () {
+                                    // setState(() {
+                                    //   obscuretext2 = !obscuretext2;
+                                    // });
+                                  },
+                                  child: Icon(obscuretext2
+                                      ? Icons.visibility_off
+                                      : Icons.visibility,
+                                      color: Colors.transparent,
+                                      // Colors.transparent
+                                  )
+                              )
+
                           )
 
                         // TextFormField(
@@ -144,7 +160,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 SizedBox(height: Get.height * 0.025,),
                 Padding(
                   padding: EdgeInsets.symmetric(
-                      horizontal: Get.width * 0.15
+                      horizontal: Get.width * 0.15,
                   ),
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -158,7 +174,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 SizedBox(height: Get.height * 0.01,),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: Get.width * 0.015),
+                  //padding: EdgeInsets.symmetric(horizontal: Get.width * 0.015,),
+                 // padding: EdgeInsets.all(10),
                   margin: EdgeInsets.symmetric(horizontal: Get.width * 0.075),
                   height: Get.height * 0.065,
                   decoration: BoxDecoration(
@@ -190,26 +207,28 @@ class _LoginScreenState extends State<LoginScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      SizedBox(width: Get.width * 0.065,),
+                      // SizedBox(width: Get.width * 0.065,),
+                      // SizedBox(width: Get.width * 0.075,),
                       Flexible(
                           child: CustomTextField(
                               textEditingController: password,
                               textColor: gradient2,
                               inputBorder: InputBorder.none,
                               obscureText: obscuretext,
+                            prefixIcon: const Icon(Icons.password, color: gradient1,),
                               suffixIcon: GestureDetector(
                                   onTap: () {
                                     setState(() {
                                       obscuretext = !obscuretext;
                                     });
                                   },
-                                  child: Icon(obscuretext2
+                                  child: Icon(obscuretext
                                       ? Icons.visibility_off
                                       : Icons.visibility,
                                       color: gradient1
 
                                   )
-                              )
+                              ),
 
                           )
 

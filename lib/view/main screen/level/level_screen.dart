@@ -21,17 +21,17 @@ class LevelScreen extends GetView<LevelScreenController> {
   List itemList = [
     {
       "name": "Beginner",
-      "image": ImageUtils.a1
+      "image": ImageUtils.level1
     },
     {
       "name": "Intermediate",
-      "image": ImageUtils.a2
+      "image": ImageUtils.level2
     },{
       "name": "Advanced",
-      "image": ImageUtils.a3
+      "image": ImageUtils.level3
     },{
       "name": "Pre Professional",
-      "image": ImageUtils.a4
+      "image": ImageUtils.level4
     },
   ];
   @override
@@ -149,7 +149,7 @@ class LevelScreen extends GetView<LevelScreenController> {
                                   image: DecorationImage(image: AssetImage(
                                     itemList[index]['image'],
                                   ),
-                                      fit: BoxFit.cover
+                                      fit: BoxFit.contain
                                   )
                               ),
                             ),
@@ -220,11 +220,11 @@ class LevelScreen extends GetView<LevelScreenController> {
                             horizontal: Get.width * 0.01),
                         height: Get.height * 0.125,
                         decoration: const BoxDecoration(
-                            color: Colors.red,
+                            color: Colors.white,
                             image: DecorationImage(image: AssetImage(
-                              ImageUtils.a14,
+                              ImageUtils.level5,
                             ),
-                                fit: BoxFit.cover
+                                fit: BoxFit.contain
                             )
                         ),
                       ),

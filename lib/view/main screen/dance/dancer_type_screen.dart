@@ -19,11 +19,11 @@ class DancerTypeScreen extends GetView<DancerTypeScreenController> {
   List itemList = [
     {
       "name": "Solo",
-      "image": ImageUtils.c11
+      "image": ImageUtils.c1
     },
     {
       "name": "Duo/Trio",
-      "image": ImageUtils.c11
+      "image": ImageUtils.c2
     },
   ];
   @override
@@ -182,6 +182,9 @@ class DancerTypeScreen extends GetView<DancerTypeScreenController> {
                               ),
                               title: itemList[index]['name'],
                               textColor: Colors.white,
+                              textAlign: TextAlign.center,
+                              overflow: TextOverflow.ellipsis,
+                              maxLines: 1,
                               fontFamily: montserratSemiBold,
                               borderRadius: Get.width * 0.04,
                               borderColor: Colors.transparent,
@@ -233,7 +236,7 @@ class DancerTypeScreen extends GetView<DancerTypeScreenController> {
                         decoration: const BoxDecoration(
                             color: Colors.white,
                             image: DecorationImage(image: AssetImage(
-                              ImageUtils.c11,
+                              ImageUtils.c4,
                             ),
                                 fit: BoxFit.cover
                             )
@@ -256,6 +259,9 @@ class DancerTypeScreen extends GetView<DancerTypeScreenController> {
                             vertical: Get.height * 0.0075,
                           ),
                           title: "Group",
+                          textAlign: TextAlign.center,
+                          overflow: TextOverflow.ellipsis,
+                          maxLines: 1,
                           textColor: Colors.white,
                           fontFamily: montserratSemiBold,
                           borderRadius: Get.width * 0.04,

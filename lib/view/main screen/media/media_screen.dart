@@ -19,11 +19,11 @@ class MediaScreen extends GetView<MediaScreenController> {
   List itemList = [
     {
       "name": "Videographer",
-      "image": ImageUtils.c11
+      "image": ImageUtils.media2
     },
     {
       "name": "Photographer",
-      "image": ImageUtils.c11
+      "image": ImageUtils.media1
     },
   ];
   @override
@@ -128,7 +128,7 @@ class MediaScreen extends GetView<MediaScreenController> {
                                 image: DecorationImage(image: AssetImage(
                                   itemList[index]['image'],
                                 ),
-                                    fit: BoxFit.cover
+                                    fit: BoxFit.contain
                                 )
                             ),
                           ),
@@ -143,8 +143,12 @@ class MediaScreen extends GetView<MediaScreenController> {
                               ),
                               padding: EdgeInsets.symmetric(
                                 vertical: Get.height * 0.0075,
+                                  horizontal: Get.width * 0.01
                               ),
                               title: itemList[index]['name'],
+                              textAlign: TextAlign.center,
+                              overflow: TextOverflow.ellipsis,
+                              maxLines: 1,
                               textColor: Colors.white,
                               fontFamily: montserratSemiBold,
                               borderRadius: Get.width * 0.04,
@@ -197,9 +201,9 @@ class MediaScreen extends GetView<MediaScreenController> {
                         decoration: const BoxDecoration(
                             color: Colors.white,
                             image: DecorationImage(image: AssetImage(
-                              ImageUtils.a14,
+                              ImageUtils.media3,
                             ),
-                                fit: BoxFit.cover
+                                fit: BoxFit.contain
                             )
                         ),
                       ),
@@ -214,8 +218,12 @@ class MediaScreen extends GetView<MediaScreenController> {
                           ),
                           padding: EdgeInsets.symmetric(
                             vertical: Get.height * 0.0075,
+                            horizontal: Get.width * 0.01
                           ),
                           title: "Video Editor",
+                          textAlign: TextAlign.center,
+                          overflow: TextOverflow.ellipsis,
+                          maxLines: 1,
                           textColor: Colors.white,
                           fontFamily: montserratSemiBold,
                           borderRadius: Get.width * 0.04,

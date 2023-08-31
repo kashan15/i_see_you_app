@@ -194,12 +194,16 @@ class IAmScreen extends GetView<IAmScreenController> {
                                 ),
                                 padding: EdgeInsets.symmetric(
                                   vertical: Get.height * 0.0075,
+                                  horizontal: Get.width * 0.01
                                 ),
                                 title: itemList[index]['name'],
                                 textColor: Colors.white,
                                 fontFamily: montserratSemiBold,
                                 borderRadius: Get.width * 0.04,
                                 borderColor: Colors.transparent,
+                                textAlign: TextAlign.center,
+                                overflow: TextOverflow.ellipsis,
+                                maxLines: 1,
                               ),
                             ),
                           ],

@@ -9,6 +9,7 @@ import 'package:i_see_you/utils/font_utils.dart';
 import 'package:i_see_you/utils/route_utils.dart';
 import 'package:i_see_you/utils/theme.dart';
 
+import '../../../components/custom_textfield.dart';
 import '../../../controller/home_screen_controller.dart';
 import '../../../utils/image_utils.dart';
 
@@ -24,6 +25,10 @@ class SignupScreen extends StatefulWidget {
 class _SignupScreenState extends State<SignupScreen> {
   bool obscuretext = true;
   bool obscuretext2 = true;
+  bool obscuretext3 = true;
+  final TextEditingController email = TextEditingController();
+  final TextEditingController password = TextEditingController();
+  final TextEditingController confirmPassword = TextEditingController();
   @override
   Widget build(BuildContext context){
     return  Scaffold(
@@ -71,8 +76,10 @@ class _SignupScreenState extends State<SignupScreen> {
                       ]),
                 ),
                 SizedBox(height: Get.height * 0.01,),
+
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: Get.width * 0.015),
+                  //padding: EdgeInsets.symmetric(horizontal: Get.width * 0.015,),
+                  // padding: EdgeInsets.all(10),
                   margin: EdgeInsets.symmetric(horizontal: Get.width * 0.075),
                   height: Get.height * 0.065,
                   decoration: BoxDecoration(
@@ -104,27 +111,31 @@ class _SignupScreenState extends State<SignupScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      SizedBox(width: Get.width * 0.05,),
+                      // SizedBox(width: Get.width * 0.065,),
+                      // SizedBox(width: Get.width * 0.075,),
                       Flexible(
-                        child: TextFormField(
-                          decoration: InputDecoration(
-                            contentPadding: EdgeInsets.fromLTRB(Get.width * 0.02, Get.height * 0.0015, Get.width * 0.01, Get.height * 0.0015),
-                            hintText: 'john11@gmail.com',
-                            hintStyle: TextStyle(
-                                color: gradient2,
-                                fontSize: Get.height * 0.02,
-                                fontFamily: montserratSemiBold
+                          child: CustomTextField(
+                            textEditingController: email,
+                            title: 'john@gmail.com',
+                            textColor: gradient2,
+                            inputBorder: InputBorder.none,
+                            prefixIcon: const Icon(Icons.email, color: gradient1,),
+
+                            suffixIcon: GestureDetector(
+                                onTap: () {
+                                  // setState(() {
+                                  //   obscuretext = !obscuretext;
+                                  // });
+                                },
+                                child: Icon(obscuretext3
+                                    ? Icons.visibility_off
+                                    : Icons.visibility,
+                                    color: Colors.transparent
+
+                                )
                             ),
-                            border: InputBorder.none,
 
-                          ),
-                          style: TextStyle(
-                              color: gradient2,
-                              fontSize: Get.height * 0.02,
-                              fontFamily: montserratSemiBold
-                          ),
-
-                        ),
+                          )
                       ),
                     ],
                   ),
@@ -147,7 +158,8 @@ class _SignupScreenState extends State<SignupScreen> {
                 ),
                 SizedBox(height: Get.height * 0.01,),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: Get.width * 0.015),
+                  //padding: EdgeInsets.symmetric(horizontal: Get.width * 0.015,),
+                  // padding: EdgeInsets.all(10),
                   margin: EdgeInsets.symmetric(horizontal: Get.width * 0.075),
                   height: Get.height * 0.065,
                   decoration: BoxDecoration(
@@ -179,45 +191,68 @@ class _SignupScreenState extends State<SignupScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      SizedBox(width: Get.width * 0.05,),
+                      // SizedBox(width: Get.width * 0.065,),
+                      // SizedBox(width: Get.width * 0.075,),
                       Flexible(
-                        child: TextFormField(
-                          obscureText: obscuretext,
-                          decoration: InputDecoration(
-                            // contentPadding: EdgeInsets.all(10.0),
-                              contentPadding: EdgeInsets.fromLTRB(
-                                  Get.width * 0.02,
-                                  Get.height * 0.0125,
-                                  Get.width * 0.01,
-                                  Get.height * 0.0125
-                              ),
-                            hintText: '',
-                            hintStyle: TextStyle(
-                                color: gradient2,
-                                fontSize: Get.height * 0.02,
-                                fontFamily: montserratSemiBold
-                            ),
-                            border: InputBorder.none,
-                              suffixIcon: GestureDetector(
-                                  onTap: () {
-                                    setState(() {
-                                      obscuretext = !obscuretext;
-                                    });
-                                  },
-                                  child: Icon(obscuretext
-                                      ? Icons.visibility_off
-                                      : Icons.visibility,
-                                      color: gradient1
+                          child: CustomTextField(
+                            textEditingController: password,
+                            textColor: gradient2,
+                            inputBorder: InputBorder.none,
+                            obscureText: obscuretext,
+                            prefixIcon: const Icon(Icons.password, color: gradient1,),
+                            suffixIcon: GestureDetector(
+                                onTap: () {
+                                  setState(() {
+                                    obscuretext = !obscuretext;
+                                  });
+                                },
+                                child: Icon(obscuretext
+                                    ? Icons.visibility_off
+                                    : Icons.visibility,
+                                    color: gradient1
 
-                                  )
-                              )
-                          ),
-                          style: TextStyle(
-                              color: gradient2,
-                              fontSize: Get.height * 0.02,
-                              fontFamily: montserratSemiBold
-                          ),
-                        ),
+                                )
+                            ),
+
+                          )
+
+                        // TextFormField(
+                        //   obscureText: obscuretext,
+                        //   decoration: InputDecoration(
+                        //     // contentPadding: EdgeInsets.all(10.0),
+                        //       contentPadding: EdgeInsets.fromLTRB(
+                        //           Get.width * 0.02,
+                        //           Get.height * 0.0125,
+                        //           Get.width * 0.01,
+                        //           Get.height * 0.0125
+                        //       ),
+                        //     hintText: '',
+                        //     hintStyle: TextStyle(
+                        //         color: gradient2,
+                        //         fontSize: Get.height * 0.02,
+                        //         fontFamily: montserratSemiBold
+                        //     ),
+                        //     border: InputBorder.none,
+                        //       suffixIcon: GestureDetector(
+                        //           onTap: () {
+                        //             setState(() {
+                        //               obscuretext = !obscuretext;
+                        //             });
+                        //           },
+                        //           child: Icon(obscuretext
+                        //               ? Icons.visibility_off
+                        //               : Icons.visibility,
+                        //               color: gradient1
+                        //
+                        //           )
+                        //       )
+                        //   ),
+                        //   style: TextStyle(
+                        //       color: gradient2,
+                        //       fontSize: Get.height * 0.02,
+                        //       fontFamily: montserratSemiBold
+                        //   ),
+                        // ),
                       ),
                     ],
                   ),
@@ -240,7 +275,8 @@ class _SignupScreenState extends State<SignupScreen> {
                 ),
                 SizedBox(height: Get.height * 0.01,),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: Get.width * 0.015),
+                  //padding: EdgeInsets.symmetric(horizontal: Get.width * 0.015,),
+                  // padding: EdgeInsets.all(10),
                   margin: EdgeInsets.symmetric(horizontal: Get.width * 0.075),
                   height: Get.height * 0.065,
                   decoration: BoxDecoration(
@@ -272,45 +308,68 @@ class _SignupScreenState extends State<SignupScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      SizedBox(width: Get.width * 0.05,),
+                      // SizedBox(width: Get.width * 0.065,),
+                      // SizedBox(width: Get.width * 0.075,),
                       Flexible(
-                        child: TextFormField(
-                          obscureText: obscuretext2,
-                          decoration: InputDecoration(
-                            // contentPadding: EdgeInsets.all(10.0),
-                              contentPadding: EdgeInsets.fromLTRB(
-                                  Get.width * 0.02,
-                                  Get.height * 0.0125,
-                                  Get.width * 0.01,
-                                  Get.height * 0.0125
-                              ),
-                            hintText: '',
-                            hintStyle: TextStyle(
-                                color: gradient2,
-                                fontSize: Get.height * 0.02,
-                                fontFamily: montserratSemiBold
-                            ),
-                            border: InputBorder.none,
-                              suffixIcon: GestureDetector(
-                                  onTap: () {
-                                    setState(() {
-                                      obscuretext2 = !obscuretext2;
-                                    });
-                                  },
-                                  child: Icon(obscuretext2
-                                      ? Icons.visibility_off
-                                      : Icons.visibility,
-                                      color: gradient1
+                          child: CustomTextField(
+                            textEditingController: confirmPassword,
+                            textColor: gradient2,
+                            inputBorder: InputBorder.none,
+                            obscureText: obscuretext2,
+                            prefixIcon: const Icon(Icons.password, color: gradient1,),
+                            suffixIcon: GestureDetector(
+                                onTap: () {
+                                  setState(() {
+                                    obscuretext2 = !obscuretext2;
+                                  });
+                                },
+                                child: Icon(obscuretext2
+                                    ? Icons.visibility_off
+                                    : Icons.visibility,
+                                    color: gradient1
 
-                                  )
-                              )
-                          ),
-                          style: TextStyle(
-                              color: gradient2,
-                              fontSize: Get.height * 0.02,
-                              fontFamily: montserratSemiBold
-                          ),
-                        ),
+                                )
+                            ),
+
+                          )
+
+                        // TextFormField(
+                        //   obscureText: obscuretext,
+                        //   decoration: InputDecoration(
+                        //     // contentPadding: EdgeInsets.all(10.0),
+                        //       contentPadding: EdgeInsets.fromLTRB(
+                        //           Get.width * 0.02,
+                        //           Get.height * 0.0125,
+                        //           Get.width * 0.01,
+                        //           Get.height * 0.0125
+                        //       ),
+                        //     hintText: '',
+                        //     hintStyle: TextStyle(
+                        //         color: gradient2,
+                        //         fontSize: Get.height * 0.02,
+                        //         fontFamily: montserratSemiBold
+                        //     ),
+                        //     border: InputBorder.none,
+                        //       suffixIcon: GestureDetector(
+                        //           onTap: () {
+                        //             setState(() {
+                        //               obscuretext = !obscuretext;
+                        //             });
+                        //           },
+                        //           child: Icon(obscuretext
+                        //               ? Icons.visibility_off
+                        //               : Icons.visibility,
+                        //               color: gradient1
+                        //
+                        //           )
+                        //       )
+                        //   ),
+                        //   style: TextStyle(
+                        //       color: gradient2,
+                        //       fontSize: Get.height * 0.02,
+                        //       fontFamily: montserratSemiBold
+                        //   ),
+                        // ),
                       ),
                     ],
                   ),

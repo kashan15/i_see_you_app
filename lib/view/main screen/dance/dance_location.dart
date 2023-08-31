@@ -23,21 +23,21 @@ class DanceLocationScreen extends GetView<DanceLocationController> {
   List itemList = [
     {
       "name": "School",
-      "image": ImageUtils.b1
+      "image": ImageUtils.danceLocationPic1
     },
     {
       "name": "Online",
-      "image": ImageUtils.b2
+      "image": ImageUtils.danceLocationPic2
     },
   ];
   List itemList2 = [
     {
       "name": "Drop-in",
-      "image": ImageUtils.b3
+      "image": ImageUtils.c2
     },
     {
       "name": "Self-Taught",
-      "image": ImageUtils.b4
+      "image": ImageUtils.a14
     },
   ];
   final TextEditingController schoolController = TextEditingController();
@@ -198,6 +198,9 @@ class DanceLocationScreen extends GetView<DanceLocationController> {
                                 vertical: Get.height * 0.0075,
                               ),
                               title: itemList[index]['name'],
+                              textAlign: TextAlign.center,
+                              overflow: TextOverflow.ellipsis,
+                              maxLines: 1,
                               textColor: Colors.white,
                               fontFamily: montserratSemiBold,
                               borderRadius: Get.width * 0.04,
@@ -219,7 +222,9 @@ class DanceLocationScreen extends GetView<DanceLocationController> {
                     children: [
                       Flexible(
                           child: Container(
-                            padding: EdgeInsets.symmetric(horizontal: Get.width * 0.025),
+                            padding: EdgeInsets.symmetric(
+                                horizontal: Get.width * 0.03
+                            ),
                             decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(
@@ -245,13 +250,15 @@ class DanceLocationScreen extends GetView<DanceLocationController> {
                               ],
                             ),
                             child: CustomTextField1(
-                              textEditingController: schoolController,
-                              textColor: gradient2,
-                              title: 'New York Dancing School',
-                              fontSize: Get.height * 0.0125,
-                              fontFamily: montserratSemiBold,
-                              inputBorder: InputBorder.none,
-                            ),
+                            textEditingController: schoolController,
+                            textColor: gradient2,
+                            title: 'New York Dancing School',
+                            // textAlign: TextAlign.center,
+                            // textAlignVertical: TextAlignVertical.center,
+                            fontSize: Get.height * 0.01,
+                            fontFamily: montserratSemiBold,
+                            inputBorder: InputBorder.none,
+                              ),
                           )
 
                         // TextFormField(
@@ -277,7 +284,7 @@ class DanceLocationScreen extends GetView<DanceLocationController> {
                       SizedBox(width: Get.width * 0.035,),
                       Flexible(
                           child: Container(
-                            padding: EdgeInsets.symmetric(horizontal: Get.width * 0.025),
+                            padding: EdgeInsets.symmetric(horizontal: Get.width * 0.035),
                             decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(
@@ -305,8 +312,10 @@ class DanceLocationScreen extends GetView<DanceLocationController> {
                             child: CustomTextField1(
                               textEditingController: onlineController,
                               textColor: gradient2,
-                              title: 'New York Online Dancing Classes',
-                              fontSize: Get.height * 0.0125,
+                              title: 'New York Dancing Classes',
+                              // textAlign: TextAlign.center,
+                              // textAlignVertical: TextAlignVertical.center,
+                              fontSize: Get.height * 0.01,
                               fontFamily: montserratSemiBold,
                               inputBorder: InputBorder.none,
                             ),
@@ -409,6 +418,9 @@ class DanceLocationScreen extends GetView<DanceLocationController> {
                                 vertical: Get.height * 0.0075,
                               ),
                               title: itemList2[index]['name'],
+                              textAlign: TextAlign.center,
+                              overflow: TextOverflow.ellipsis,
+                              maxLines: 1,
                               textColor: Colors.white,
                               fontFamily: montserratSemiBold,
                               borderRadius: Get.width * 0.04,

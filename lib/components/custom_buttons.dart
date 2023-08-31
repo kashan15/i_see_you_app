@@ -24,6 +24,8 @@ class CustomButton extends StatelessWidget {
   // final double? borderWidth;
   dynamic fontFamily;
   dynamic textAlign;
+  TextOverflow? overflow;
+  int? maxLines;
   final bool isSelected;
   void Function()? onTap;
   CustomButton({
@@ -40,6 +42,8 @@ class CustomButton extends StatelessWidget {
     this.fontFamily,
     this.height,
     this.width,
+    this.overflow,
+    this.maxLines,
     this.textAlign,
     // this.borderWidth,
     required this.isSelected
@@ -78,6 +82,8 @@ class CustomButton extends StatelessWidget {
             fontSize: fontSize,
             color: textColor,
             textAlign: textAlign,
+            overFlow: overflow,
+            maxLines: maxLines,
           ),
         ),
       ),

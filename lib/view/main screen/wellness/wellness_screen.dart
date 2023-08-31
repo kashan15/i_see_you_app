@@ -20,19 +20,19 @@ class WellnessScreen extends GetView<WellnessScreenController> {
   List itemList = [
     {
       "name": "Nutritional",
-      "image": ImageUtils.b1
+      "image": ImageUtils.wellness1
     },
     {
       "name": "Yoga",
-      "image": ImageUtils.b2
+      "image": ImageUtils.wellness2
     },
     {
       "name": "Physiotherapist",
-      "image": ImageUtils.b3
+      "image": ImageUtils.wellness3
     },
     {
       "name": "Chiropractor",
-      "image": ImageUtils.b4
+      "image": ImageUtils.wellness4
     },
   ];
   @override
@@ -152,8 +152,12 @@ class WellnessScreen extends GetView<WellnessScreenController> {
                               ),
                               padding: EdgeInsets.symmetric(
                                 vertical: Get.height * 0.0075,
+                                horizontal: Get.width * 0.01
                               ),
                               title: itemList[index]['name'],
+                              textAlign: TextAlign.center,
+                              overflow: TextOverflow.ellipsis,
+                              maxLines: 1,
                               textColor: Colors.white,
                               fontFamily: montserratSemiBold,
                               borderRadius: Get.width * 0.04,
