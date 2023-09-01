@@ -230,19 +230,25 @@ class IAmScreen extends GetView<IAmScreenController> {
                       Row(
                           mainAxisAlignment: MainAxisAlignment.end,
                           children:[
-                            CircleAvatar(
-                              radius: Get.width * 0.0275,
-                              backgroundColor: Colors.green,
-                              child:
-                              Center(
-                                child: Icon(
-                                  Icons.check,
-                                  size: Get.height * 0.02,
-                                  color: Colors.white,
-                                ),
+                            // CircleAvatar(
+                            //   radius: Get.width * 0.0275,
+                            //   backgroundColor: Colors.green,
+                            //   child:
+                            //   Center(
+                            //     child: Icon(
+                            //       Icons.check,
+                            //       size: Get.height * 0.02,
+                            //       color: Colors.white,
+                            //     ),
+                            //   ),
+                            // ),
+                            SizedBox(
+                              height: Get.height * 0.04,
+                              child: Image.asset(
+                                ImageUtils.checkIconUnselected,
                               ),
                             ),
-                            SizedBox(width: Get.width * 0.02,),
+                            // SizedBox(width: Get.width * 0.02,),
 
                           ]),
                       Container(

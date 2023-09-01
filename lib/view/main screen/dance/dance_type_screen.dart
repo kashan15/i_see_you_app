@@ -23,13 +23,13 @@ class DanceTypeScreen extends GetView<DanceTypeScreenController> {
     },
     {
       "name": "Latin",
-      "image": ImageUtils.a2
+      "image": ImageUtils.b1
     },{
       "name": "Ballroom",
       "image": ImageUtils.onboard3
     },{
       "name": "Culture",
-      "image": ImageUtils.a4
+      "image": ImageUtils.b3
     },{
       "name": "Cheerleader",
       "image": ImageUtils.onboard5

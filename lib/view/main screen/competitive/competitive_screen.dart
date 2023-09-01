@@ -19,36 +19,36 @@ class CompetitiveScreen extends GetView<CompetitiveScreenController> {
   List itemList = [
     {
       "name": "Jazz",
-      "image": ImageUtils.a1
+      "image": ImageUtils.c1
     },
     {
       "name": "Contemporary",
-      "image": ImageUtils.a2
+      "image": ImageUtils.c6
     },{
       "name": "Hip-hop",
-      "image": ImageUtils.a3
+      "image": ImageUtils.c2
     },{
       "name": "Lyrical",
-      "image": ImageUtils.a4
+      "image": ImageUtils.c4
     },{
       "name": "Ballet",
-      "image": ImageUtils.a5
+      "image": ImageUtils.c1
     },{
       "name": "Musical Theater",
-      "image": ImageUtils.a6
+      "image": ImageUtils.c6
     },{
       "name": "Acro",
-      "image": ImageUtils.a7
+      "image": ImageUtils.c2
     },{
       "name": "Tap",
-      "image": ImageUtils.a8
+      "image": ImageUtils.c4
     },{
       "name": "Open",
-      "image": ImageUtils.a9
+      "image": ImageUtils.c1
     },
     {
       "name": "Pointe",
-      "image": ImageUtils.a10
+      "image": ImageUtils.c6
     },
   ];
   @override

@@ -17,6 +17,7 @@ class ImageUtils{
   static const  searchIcon = 'assets/icons/searchIcon.png';
   static const  checkIconSelected = 'assets/icons/checkIcon1.png';
   static const  checkIconUnselected = 'assets/icons/checkIcon2.png';
+  static const  key = 'assets/icons/key.png';
 
   /// Images
   static const String splashImage = 'assets/images/splashImage.png';
@@ -32,19 +33,20 @@ class ImageUtils{
   static const String onboard4 = 'assets/images/onboard4.png';
   static const String onboard5 = 'assets/images/onboard5.png';
   static const String onboard6 = 'assets/images/onboard6.png';
-  static const String a1 = 'assets/images/a1.jpg';
-  static const String a2 = 'assets/images/a2.jpg';
-  static const String a3 = 'assets/images/a3.jpg';
-  static const String a4 = 'assets/images/a4.jpg';
-  static const String a5 = 'assets/images/a5.jpg';
-  static const String a6 = 'assets/images/a6.jpg';
-  static const String a7 = 'assets/images/a7.jpg';
-  static const String a8 = 'assets/images/a8.jpeg';
-  static const String a9 = 'assets/images/a9.jpg';
-  static const String a10 = 'assets/images/a10.jpg';
-  static const String a11 = 'assets/images/a11.jpg';
-  static const String a12 = 'assets/images/a12.jpg';
-  static const String a13 = 'assets/images/a13.jpg';
+  static const String onboardAnimated1 = 'assets/images/onboardingAnimated1.gif';
+  // static const String a1 = 'assets/images/a1.jpg';
+  // static const String a2 = 'assets/images/a2.jpg';
+  // static const String a3 = 'assets/images/a3.jpg';
+  // static const String a4 = 'assets/images/a4.jpg';
+  // static const String a5 = 'assets/images/a5.jpg';
+  // static const String a6 = 'assets/images/a6.jpg';
+  // static const String a7 = 'assets/images/a7.jpg';
+  // static const String a8 = 'assets/images/a8.jpeg';
+  // static const String a9 = 'assets/images/a9.jpg';
+  // static const String a10 = 'assets/images/a10.jpg';
+  // static const String a11 = 'assets/images/a11.jpg';
+  // static const String a12 = 'assets/images/a12.jpg';
+  // static const String a13 = 'assets/images/a13.jpg';
   static const String a14 = 'assets/images/a14.jpg';
   static const String b1 = 'assets/images/b1.png';
   static const String b2 = 'assets/images/b2.png';

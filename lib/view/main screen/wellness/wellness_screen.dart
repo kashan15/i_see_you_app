@@ -173,7 +173,8 @@ class WellnessScreen extends GetView<WellnessScreenController> {
                 SizedBox(height: Get.height * 0.15,),
                 BouncingButton(
                     onPressed: ()async{
-                      Future.delayed(Duration(seconds: 1), (){
+                      Future.delayed(Duration(milliseconds: 600), (){
+                        Get.toNamed(kCompetitiveScreen);
                       });
                     },
                     child:
@@ -214,7 +215,8 @@ class WellnessScreen extends GetView<WellnessScreenController> {
                 SizedBox(height: Get.height * 0.025,),
                 BouncingButton(
                     onPressed: ()async{
-                      Future.delayed(Duration(seconds: 1), (){
+                      Future.delayed(Duration(milliseconds: 600), (){
+                        Get.toNamed(kCompetitiveScreen);
                       });
                     },
                     child:

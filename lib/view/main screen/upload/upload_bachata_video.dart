@@ -18,55 +18,55 @@ class UploadBachataVideo extends GetView<UploadBachataVideoController> {
 
   List itemList = [
     {
-      "image": ImageUtils.a1
+      "image": ImageUtils.b1
     },
     {
-      "image": ImageUtils.a2
+      "image": ImageUtils.b2
     },{
 
-      "image": ImageUtils.a3
+      "image": ImageUtils.b3
     },{
-      "image": ImageUtils.a4
+      "image": ImageUtils.c1
     },{
-      "image": ImageUtils.a5
+      "image": ImageUtils.c2
     },{
-      "image": ImageUtils.a6
+      "image": ImageUtils.c4
     },{
-      "image": ImageUtils.a7
+      "image": ImageUtils.b1
     },{
-      "image": ImageUtils.a8
+      "image": ImageUtils.b2
     },{
-      "image": ImageUtils.a9
+      "image": ImageUtils.b3
     },
     {
-      "image": ImageUtils.a10
+      "image": ImageUtils.c1
     },
     {
-      "image": ImageUtils.a11
+      "image": ImageUtils.c2
     },
     {
-      "image": ImageUtils.a1
+      "image": ImageUtils.c4
     },
     {
-      "image": ImageUtils.a2
+      "image": ImageUtils.b1
     },{
 
-      "image": ImageUtils.a3
+      "image": ImageUtils.b2
     },{
-      "image": ImageUtils.a4
+      "image": ImageUtils.b3
     },{
-      "image": ImageUtils.a5
+      "image": ImageUtils.c1
     },{
-      "image": ImageUtils.a6
+      "image": ImageUtils.c2
     },{
-      "image": ImageUtils.a7
+      "image": ImageUtils.c4
     },{
-      "image": ImageUtils.a8
+      "image": ImageUtils.b1
     },{
-      "image": ImageUtils.a9
+      "image": ImageUtils.b2
     },
     {
-      "image": ImageUtils.a10
+      "image": ImageUtils.b3
     },
   ];
 

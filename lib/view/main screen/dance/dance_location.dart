@@ -19,6 +19,9 @@ import '../../../utils/image_utils.dart';
 
 class DanceLocationScreen extends GetView<DanceLocationController> {
   DanceLocationScreen({Key? key}) : super(key: key);
+  final TextEditingController email = TextEditingController();
+  final TextEditingController password = TextEditingController();
+  final TextEditingController confirmPassword = TextEditingController();
 
   List itemList = [
     {
@@ -212,6 +215,7 @@ class DanceLocationScreen extends GetView<DanceLocationController> {
                     );
                   },
                 ),
+
                 Padding(
                   padding: EdgeInsets.symmetric(
                     horizontal:
@@ -221,45 +225,104 @@ class DanceLocationScreen extends GetView<DanceLocationController> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Flexible(
-                          child: Container(
-                            padding: EdgeInsets.symmetric(
-                                horizontal: Get.width * 0.03
+                          child:
+                          // Container(
+                          //   padding: EdgeInsets.symmetric(
+                          //       horizontal: Get.width * 0.03
+                          //   ),
+                          //   decoration: BoxDecoration(
+                          //     color: Colors.white,
+                          //     borderRadius: BorderRadius.circular(
+                          //         Get.width * 0.1
+                          //     ),
+                          //     border: const GradientBoxBorder(
+                          //       gradient: LinearGradient(
+                          //           begin: Alignment.topCenter,
+                          //           end: Alignment.bottomCenter,
+                          //           colors: [
+                          //             gradient1,
+                          //             gradient3
+                          //           ]),
+                          //       width: 5,
+                          //     ),
+                          //     boxShadow: [
+                          //       BoxShadow(
+                          //           color: Colors.white.withOpacity(0.8),
+                          //           blurRadius: 5,
+                          //           spreadRadius: 2,
+                          //           offset: Offset(0, 1)
+                          //       )
+                          //     ],
+                          //   ),
+                          //   child: CustomTextField1(
+                          //   textEditingController: schoolController,
+                          //   textColor: gradient2,
+                          //   title: 'New York Dancing School',
+                          //   // textAlign: TextAlign.center,
+                          //   // textAlignVertical: TextAlignVertical.center,
+                          //   fontSize: Get.height * 0.01,
+                          //   fontFamily: montserratSemiBold,
+                          //   inputBorder: InputBorder.none,
+                          //     ),
+                          // )
+
+                          Material(
+                            elevation: 0,
+                            shadowColor:
+                            Colors.grey.withOpacity(0.3),
+                            borderRadius: BorderRadius.circular(Get.width * 0.1),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(Get.width * 0.1),
+                                border: const GradientBoxBorder(
+                                  gradient: LinearGradient(
+                                      begin: Alignment.topCenter,
+                                      end: Alignment.bottomCenter,
+                                      colors: [
+                                        gradient1,
+                                        gradient3
+                                      ]),
+                                  width: 5,
+                                ),
+                                boxShadow: [
+                                  BoxShadow(
+                                      color: Colors.white.withOpacity(0.8),
+                                      blurRadius: 5,
+                                      spreadRadius: 2,
+                                      offset: Offset(0, 1)
+                                  )
+                                ],
+                              ),
+                              // padding: EdgeInsets.symmetric(horizontal: 0.5.w),
+                              child: Row(
+                                crossAxisAlignment:
+                                CrossAxisAlignment.center,
+                                children: [
+                                  SizedBox(width: Get.width * 0.035,),
+                                  Expanded(
+                                    child: TextFormField(
+                                      onTap: () {},
+                                      keyboardType: TextInputType.emailAddress,
+                                      controller: email,
+                                      style: const TextStyle(
+                                        color: gradient1,
+                                        fontFamily: montserratSemiBold,
+                                        fontSize: 09
+                                      ),
+                                      decoration: const InputDecoration(
+                                          border: InputBorder.none,
+                                          hintText: 'New York Dancing School',
+                                          hintStyle: TextStyle(
+                                              color: gradient1
+                                          )),
+                                    ),
+                                  ),
+                                  SizedBox(width: Get.width * 0.05,),
+                                ],
+                              ),
                             ),
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(
-                                  Get.width * 0.1
-                              ),
-                              border: const GradientBoxBorder(
-                                gradient: LinearGradient(
-                                    begin: Alignment.topCenter,
-                                    end: Alignment.bottomCenter,
-                                    colors: [
-                                      gradient1,
-                                      gradient3
-                                    ]),
-                                width: 5,
-                              ),
-                              boxShadow: [
-                                BoxShadow(
-                                    color: Colors.white.withOpacity(0.8),
-                                    blurRadius: 5,
-                                    spreadRadius: 2,
-                                    offset: Offset(0, 1)
-                                )
-                              ],
-                            ),
-                            child: CustomTextField1(
-                            textEditingController: schoolController,
-                            textColor: gradient2,
-                            title: 'New York Dancing School',
-                            // textAlign: TextAlign.center,
-                            // textAlignVertical: TextAlignVertical.center,
-                            fontSize: Get.height * 0.01,
-                            fontFamily: montserratSemiBold,
-                            inputBorder: InputBorder.none,
-                              ),
-                          )
+                          ),
 
                         // TextFormField(
                         //   decoration: InputDecoration(
@@ -283,43 +346,102 @@ class DanceLocationScreen extends GetView<DanceLocationController> {
                       ),
                       SizedBox(width: Get.width * 0.035,),
                       Flexible(
-                          child: Container(
-                            padding: EdgeInsets.symmetric(horizontal: Get.width * 0.035),
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(
-                                  Get.width * 0.1
+                          child:
+                          // Container(
+                          //   padding: EdgeInsets.symmetric(horizontal: Get.width * 0.035),
+                          //   decoration: BoxDecoration(
+                          //     color: Colors.white,
+                          //     borderRadius: BorderRadius.circular(
+                          //         Get.width * 0.1
+                          //     ),
+                          //     border: const GradientBoxBorder(
+                          //       gradient: LinearGradient(
+                          //           begin: Alignment.topCenter,
+                          //           end: Alignment.bottomCenter,
+                          //           colors: [
+                          //             gradient1,
+                          //             gradient3
+                          //           ]),
+                          //       width: 5,
+                          //     ),
+                          //     boxShadow: [
+                          //       BoxShadow(
+                          //           color: Colors.white.withOpacity(0.8),
+                          //           blurRadius: 5,
+                          //           spreadRadius: 2,
+                          //           offset: Offset(0, 1)
+                          //       )
+                          //     ],
+                          //   ),
+                          //   child: CustomTextField1(
+                          //     textEditingController: onlineController,
+                          //     textColor: gradient2,
+                          //     title: 'New York Dancing Classes',
+                          //     // textAlign: TextAlign.center,
+                          //     // textAlignVertical: TextAlignVertical.center,
+                          //     fontSize: Get.height * 0.01,
+                          //     fontFamily: montserratSemiBold,
+                          //     inputBorder: InputBorder.none,
+                          //   ),
+                          // )
+
+                          Material(
+                            elevation: 0,
+                            shadowColor:
+                            Colors.grey.withOpacity(0.3),
+                            borderRadius: BorderRadius.circular(Get.width * 0.1),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(Get.width * 0.1),
+                                border: const GradientBoxBorder(
+                                  gradient: LinearGradient(
+                                      begin: Alignment.topCenter,
+                                      end: Alignment.bottomCenter,
+                                      colors: [
+                                        gradient1,
+                                        gradient3
+                                      ]),
+                                  width: 5,
+                                ),
+                                boxShadow: [
+                                  BoxShadow(
+                                      color: Colors.white.withOpacity(0.8),
+                                      blurRadius: 5,
+                                      spreadRadius: 2,
+                                      offset: Offset(0, 1)
+                                  )
+                                ],
                               ),
-                              border: const GradientBoxBorder(
-                                gradient: LinearGradient(
-                                    begin: Alignment.topCenter,
-                                    end: Alignment.bottomCenter,
-                                    colors: [
-                                      gradient1,
-                                      gradient3
-                                    ]),
-                                width: 5,
+                              // padding: EdgeInsets.symmetric(horizontal: 0.5.w),
+                              child: Row(
+                                crossAxisAlignment:
+                                CrossAxisAlignment.center,
+                                children: [
+                                  SizedBox(width: Get.width * 0.035,),
+                                  Expanded(
+                                    child: TextFormField(
+                                      onTap: () {},
+                                      keyboardType: TextInputType.emailAddress,
+                                      controller: password,
+                                      style: const TextStyle(
+                                        color: gradient1,
+                                        fontFamily: montserratSemiBold,
+                                        fontSize: 09
+                                      ),
+                                      decoration: const InputDecoration(
+                                          border: InputBorder.none,
+                                          hintText: 'New York Dancing Class',
+                                          hintStyle: TextStyle(
+                                              color: gradient1
+                                          )),
+                                    ),
+                                  ),
+                                  SizedBox(width: Get.width * 0.05,),
+                                ],
                               ),
-                              boxShadow: [
-                                BoxShadow(
-                                    color: Colors.white.withOpacity(0.8),
-                                    blurRadius: 5,
-                                    spreadRadius: 2,
-                                    offset: Offset(0, 1)
-                                )
-                              ],
                             ),
-                            child: CustomTextField1(
-                              textEditingController: onlineController,
-                              textColor: gradient2,
-                              title: 'New York Dancing Classes',
-                              // textAlign: TextAlign.center,
-                              // textAlignVertical: TextAlignVertical.center,
-                              fontSize: Get.height * 0.01,
-                              fontFamily: montserratSemiBold,
-                              inputBorder: InputBorder.none,
-                            ),
-                          )
+                          ),
 
                         // TextFormField(
                         //   decoration: InputDecoration(
@@ -344,6 +466,7 @@ class DanceLocationScreen extends GetView<DanceLocationController> {
                     ],
                   ),
                 ),
+
                 SizedBox(height: Get.height * 0.02,),
                 GridView.builder(
                   shrinkWrap: true,

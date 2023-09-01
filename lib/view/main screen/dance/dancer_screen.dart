@@ -19,40 +19,40 @@ class DancerScreen extends GetView<DancerScreenController> {
   List itemList = [
     {
       "name": "Dancer",
-      "image": ImageUtils.a1
+      "image": ImageUtils.b1
     },
     {
       "name": "Choreographer",
-      "image": ImageUtils.a2
+      "image": ImageUtils.b2
     },{
       "name": "Adjudicator",
-      "image": ImageUtils.a3
+      "image": ImageUtils.b3
     },{
       "name": "School",
-      "image": ImageUtils.a4
+      "image": ImageUtils.b1
     },{
       "name": "Parents",
-      "image": ImageUtils.a5
+      "image": ImageUtils.b2
     },{
       "name": "Cheerleaders",
-      "image": ImageUtils.a6
+      "image": ImageUtils.b3
     },{
       "name": "Wellness",
-      "image": ImageUtils.a7
+      "image": ImageUtils.b1
     },{
       "name": "Scout",
-      "image": ImageUtils.a8
+      "image": ImageUtils.b2
     },{
       "name": "Advertiser",
-      "image": ImageUtils.a9
+      "image": ImageUtils.b3
     },
     {
       "name": "Media",
-      "image": ImageUtils.a10
+      "image": ImageUtils.b1
     },
     {
       "name": "Media",
-      "image": ImageUtils.a11
+      "image": ImageUtils.b3
     },
   ];
   @override
