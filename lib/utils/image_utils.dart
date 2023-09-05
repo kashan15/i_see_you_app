@@ -18,10 +18,27 @@ class ImageUtils{
   static const  checkIconSelected = 'assets/icons/checkIcon1.png';
   static const  checkIconUnselected = 'assets/icons/checkIcon2.png';
   static const  key = 'assets/icons/key.png';
+  static const  favIcon = 'assets/icons/favIcon.png';
+  static const  likeIcon = 'assets/icons/likeIcon.png';
+  static const  likeIcon1 = 'assets/icons/likeIcon1.png';
+  static const  badgeIcon = 'assets/icons/badgeIcon.png';
+  static const  callIcon = 'assets/icons/callIcon.png';
+  static const  chatIcon = 'assets/icons/chatIcon.png';
+  static const  coinIcon = 'assets/icons/coinIcon.png';
+  static const  favIcon1 = 'assets/icons/favIcon1.png';
+  static const  videoIcon = 'assets/icons/videoIcon.png';
+  static const  rewardIcon = 'assets/icons/rewardIcon.png';
+  static const  commentIcon = 'assets/icons/commentIcon.png';
+  static const  followIcon = 'assets/icons/followIcon.png';
+  static const  visibleIcon = 'assets/icons/visibleIcon.png';
+  static const  groupIcons = 'assets/icons/groupIcons.png';
+  static const  flag = 'assets/icons/flag.png';
+
 
   /// Images
   static const String splashImage = 'assets/images/splashImage.png';
   static const String newBackground1 = 'assets/images/newBackground1.gif';
+  static const String newBackground2 = 'assets/images/newBackground2.gif';
   static const String logo = 'assets/images/logo.png';
   static const String logo1 = 'assets/images/logo1.png';
   static const String splashAnimated2 = 'assets/images/splashAnimated2.gif';
@@ -33,6 +50,11 @@ class ImageUtils{
   static const String onboard4 = 'assets/images/onboard4.png';
   static const String onboard5 = 'assets/images/onboard5.png';
   static const String onboard6 = 'assets/images/onboard6.png';
+  static const String banner = 'assets/images/banner.png';
+  static const String banner1 = 'assets/images/banner1.jpg';
+  static const String background = 'assets/images/loginBackground.png';
+  static const String profile = 'assets/images/profile.png';
+  static const String homeBackground = 'assets/images/homeBackground.png';
   static const String onboardAnimated1 = 'assets/images/onboardingAnimated1.gif';
   // static const String a1 = 'assets/images/a1.jpg';
   // static const String a2 = 'assets/images/a2.jpg';

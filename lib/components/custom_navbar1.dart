@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:i_see_you/utils/image_utils.dart';
+import 'package:i_see_you/view/home/home.dart';
 import 'package:i_see_you/view/home/home_screen.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
@@ -33,7 +34,7 @@ class BottomNavBar extends GetView<NavBarController> {
 
     List<Widget> _buildScreens() {
       return [
-        HomeScreen(),
+        Home(),
         HomeScreen(),
         HomeScreen(),
         HomeScreen(),

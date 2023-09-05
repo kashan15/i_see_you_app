@@ -44,6 +44,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "csslib",
+      "rootUri": "file:///C:/Users/Flutter/AppData/Local/Pub/Cache/hosted/pub.dev/csslib-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "cupertino_icons",
       "rootUri": "file:///C:/Users/Flutter/AppData/Local/Pub/Cache/hosted/pub.dev/cupertino_icons-1.0.5",
       "packageUri": "lib/",
@@ -170,6 +176,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "html",
+      "rootUri": "file:///C:/Users/Flutter/AppData/Local/Pub/Cache/hosted/pub.dev/html-0.15.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "intl",
       "rootUri": "file:///C:/Users/Flutter/AppData/Local/Pub/Cache/hosted/pub.dev/intl-0.18.1",
       "packageUri": "lib/",
@@ -186,6 +198,12 @@
       "rootUri": "file:///C:/Users/Flutter/AppData/Local/Pub/Cache/hosted/pub.dev/js-0.6.5",
       "packageUri": "lib/",
       "languageVersion": "2.16"
+    },
+    {
+      "name": "like_button",
+      "rootUri": "file:///C:/Users/Flutter/AppData/Local/Pub/Cache/hosted/pub.dev/like_button-2.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "lints",
@@ -362,6 +380,36 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "video_player",
+      "rootUri": "file:///C:/Users/Flutter/AppData/Local/Pub/Cache/hosted/pub.dev/video_player-2.7.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "video_player_android",
+      "rootUri": "file:///C:/Users/Flutter/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_android-2.4.10",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "video_player_avfoundation",
+      "rootUri": "file:///C:/Users/Flutter/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_avfoundation-2.4.10",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "video_player_platform_interface",
+      "rootUri": "file:///C:/Users/Flutter/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_platform_interface-6.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "video_player_web",
+      "rootUri": "file:///C:/Users/Flutter/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_web-2.0.17",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "win32",
       "rootUri": "file:///C:/Users/Flutter/AppData/Local/Pub/Cache/hosted/pub.dev/win32-4.1.4",
       "packageUri": "lib/",
@@ -380,7 +428,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-09-01T17:46:10.109040Z",
+  "generated": "2023-09-05T16:36:29.025269Z",
   "generator": "pub",
   "generatorVersion": "2.19.4"
 }

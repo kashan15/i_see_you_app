@@ -35,7 +35,7 @@ class MediaScreen extends GetView<MediaScreenController> {
           decoration: const BoxDecoration(
               image: DecorationImage(image: AssetImage(
                   // ImageUtils.splashImage
-                  ImageUtils.newBackground1
+                  ImageUtils.newBackground2
               ),
                   fit: BoxFit.fill
               )

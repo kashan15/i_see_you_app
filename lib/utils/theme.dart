@@ -15,6 +15,11 @@ class CustomTheme {
     fontFamily: montserratMedium,
     color: Colors.white,
   );
+  static final normalTextBlack = TextStyle(
+    fontSize: Get.height * 0.02,
+    fontFamily: montserratMedium,
+    color: Colors.black,
+  );
   static final shortText = TextStyle(
     fontSize: Get.height * 0.015,
     fontFamily: montserratRegular,

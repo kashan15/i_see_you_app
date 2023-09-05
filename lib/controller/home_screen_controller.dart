@@ -9,4 +9,6 @@ class HomeScreenController extends GetxController
   late BuildContext globalContext;
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
 
+  final myPageController = PageController(initialPage: 0);
+
 }

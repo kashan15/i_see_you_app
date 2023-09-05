@@ -3,6 +3,8 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:i_see_you/components/custom_navbar1.dart';
 import 'package:i_see_you/view/home/home_screen.dart';
+import 'package:i_see_you/view/home/my_post_1.dart';
+import 'package:i_see_you/view/home/my_post_2.dart';
 import 'package:i_see_you/view/main%20screen/dance/dance_location.dart';
 import 'package:i_see_you/view/main%20screen/dance/latin_screen.dart';
 import 'package:i_see_you/view/main%20screen/upload/upload_bachata_video.dart';
@@ -16,6 +18,8 @@ import '../utils/route_utils.dart';
 import '../view/authentication/login/login_screen.dart';
 import '../view/authentication/signup/signup_screen.dart';
 import '../view/authentication/signup/social_signup.dart';
+import '../view/home/home.dart';
+import '../view/home/my_post_3.dart';
 import '../view/main screen/competitive/competitive_screen.dart';
 import '../view/main screen/dance/dance_type_screen.dart';
 import '../view/main screen/dance/dancer_screen.dart';
@@ -141,6 +145,50 @@ class RouteManagement {
         binding: ControllerBinding(),
       ),
       GetPage(
+        name:   kMyPost1,
+        page: () => MyPost1(),
+        binding: ControllerBinding(),
+      ),
+      GetPage(
+        name:   kMyPost2,
+        page: () => MyPost2(),
+        binding: ControllerBinding(),
+      ),
+      GetPage(
+        name:   kMyPost3,
+        page: () => MyPost3(),
+        binding: ControllerBinding(),
+      ),
+      GetPage(
+        name:   kMyPost4,
+        page: () => MyPost4(),
+        binding: ControllerBinding(),
+      ),GetPage(
+        name:   kMyPost5,
+        page: () => MyPost5(),
+        binding: ControllerBinding(),
+      ),GetPage(
+        name:   kMyPost6,
+        page: () => MyPost6(),
+        binding: ControllerBinding(),
+      ),GetPage(
+        name:   kMyPost7,
+        page: () => MyPost7(),
+        binding: ControllerBinding(),
+      ),GetPage(
+        name:   kMyPost8,
+        page: () => MyPost8(),
+        binding: ControllerBinding(),
+      ),GetPage(
+        name:   kMyPost9,
+        page: () => MyPost9(),
+        binding: ControllerBinding(),
+      ),GetPage(
+        name:   kMyPost10,
+        page: () => MyPost10(),
+        binding: ControllerBinding(),
+      ),
+      GetPage(
         name:   kHomeScreen,
         page: () =>  const HomeScreen(),
         binding: ControllerBinding(),
@@ -148,6 +196,11 @@ class RouteManagement {
       GetPage(
         name:   kHomeScreen,
         page: () =>  const HomeScreen(),
+        binding: ControllerBinding(),
+      ),
+      GetPage(
+        name:   kHome,
+        page: () =>  const Home(),
         binding: ControllerBinding(),
       ),
       GetPage(

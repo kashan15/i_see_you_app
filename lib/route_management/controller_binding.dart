@@ -11,6 +11,7 @@ import 'package:i_see_you/controller/i_am_screen_controller.dart';
 import 'package:i_see_you/controller/latin_screen_controller.dart';
 import 'package:i_see_you/controller/level_screen_controller.dart';
 import 'package:i_see_you/controller/media_screen_controller.dart';
+import 'package:i_see_you/controller/my_post_controller.dart';
 import 'package:i_see_you/controller/navbar_controller.dart';
 import 'package:i_see_you/controller/onboarding_controller.dart';
 import 'package:i_see_you/controller/upload_bachata_video_controller.dart';
@@ -46,5 +47,6 @@ class ControllerBinding extends Bindings {
     Get.lazyPut(() => VideoDetailController());
     Get.lazyPut(() => UploadProfilePictureController());
     Get.lazyPut(() => EditMyProfileController());
+    Get.lazyPut(() => MyPostController());
   }
 }

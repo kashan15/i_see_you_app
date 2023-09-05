@@ -64,7 +64,7 @@ class DancerScreen extends GetView<DancerScreenController> {
           decoration: const BoxDecoration(
               image: DecorationImage(image: AssetImage(
                   // ImageUtils.splashImage
-                  ImageUtils.newBackground1
+                  ImageUtils.newBackground2
               ),
                   fit: BoxFit.fill
               )
