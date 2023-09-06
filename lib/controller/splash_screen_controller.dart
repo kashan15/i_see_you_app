@@ -14,7 +14,7 @@ class SplashScreenController extends GetxController{
 
   goto()async{
     await Future.delayed(const Duration(seconds: 3),(){
-      Get.toNamed(kOnboardingScreen);
+      Get.toNamed(kNavBar);
     }
     );
   }

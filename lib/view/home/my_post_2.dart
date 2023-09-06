@@ -76,18 +76,20 @@ class _MyPost2State extends State<MyPost2> {
                     //   width: Get.width * 0.5,
                     //   child: Image.asset(ImageUtils.banner),
                     // ),
-                    Container(
-                      height: Get.height * 0.11,
-                      width: Get.width * 0.7,
-                      decoration: const BoxDecoration(
-                          color: Colors.transparent,
-                          image: DecorationImage(image: AssetImage(
-                              ImageUtils.banner1
-                          ),
-                              fit: BoxFit.cover
-                          )
-                      ),
-                    ),
+
+                    // Container(
+                    //   height: Get.height * 0.11,
+                    //   width: Get.width * 0.7,
+                    //   decoration: const BoxDecoration(
+                    //       color: Colors.transparent,
+                    //       image: DecorationImage(image: AssetImage(
+                    //           ImageUtils.banner1
+                    //       ),
+                    //           fit: BoxFit.cover
+                    //       )
+                    //   ),
+                    // ),
+
                     SizedBox(height: Get.height * 0.01,),
 
                     Container(

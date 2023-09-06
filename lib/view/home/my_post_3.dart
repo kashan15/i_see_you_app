@@ -76,18 +76,19 @@ class _MyPost3State extends State<MyPost3> {
                     //   width: Get.width * 0.5,
                     //   child: Image.asset(ImageUtils.banner),
                     // ),
-                    Container(
-                      height: Get.height * 0.11,
-                      width: Get.width * 0.7,
-                      decoration: const BoxDecoration(
-                          color: Colors.transparent,
-                          image: DecorationImage(image: AssetImage(
-                              ImageUtils.banner1
-                          ),
-                              fit: BoxFit.cover
-                          )
-                      ),
-                    ),
+                    // Container(
+                    //   height: Get.height * 0.11,
+                    //   width: Get.width * 0.7,
+                    //   decoration: const BoxDecoration(
+                    //       color: Colors.transparent,
+                    //       image: DecorationImage(image: AssetImage(
+                    //           ImageUtils.banner1
+                    //       ),
+                    //           fit: BoxFit.cover
+                    //       )
+                    //   ),
+                    // ),
+
                     SizedBox(height: Get.height * 0.01,),
 
                     Container(
@@ -508,18 +509,20 @@ class _MyPost4State extends State<MyPost4> {
                     //   width: Get.width * 0.5,
                     //   child: Image.asset(ImageUtils.banner),
                     // ),
-                    Container(
-                      height: Get.height * 0.11,
-                      width: Get.width * 0.7,
-                      decoration: const BoxDecoration(
-                          color: Colors.transparent,
-                          image: DecorationImage(image: AssetImage(
-                              ImageUtils.banner1
-                          ),
-                              fit: BoxFit.cover
-                          )
-                      ),
-                    ),
+
+                    // Container(
+                    //   height: Get.height * 0.11,
+                    //   width: Get.width * 0.7,
+                    //   decoration: const BoxDecoration(
+                    //       color: Colors.transparent,
+                    //       image: DecorationImage(image: AssetImage(
+                    //           ImageUtils.banner1
+                    //       ),
+                    //           fit: BoxFit.cover
+                    //       )
+                    //   ),
+                    // ),
+
                     SizedBox(height: Get.height * 0.01,),
 
                     Container(
@@ -939,18 +942,20 @@ class _MyPost5State extends State<MyPost5> {
                     //   width: Get.width * 0.5,
                     //   child: Image.asset(ImageUtils.banner),
                     // ),
-                    Container(
-                      height: Get.height * 0.11,
-                      width: Get.width * 0.7,
-                      decoration: const BoxDecoration(
-                          color: Colors.transparent,
-                          image: DecorationImage(image: AssetImage(
-                              ImageUtils.banner1
-                          ),
-                              fit: BoxFit.cover
-                          )
-                      ),
-                    ),
+
+                    // Container(
+                    //   height: Get.height * 0.11,
+                    //   width: Get.width * 0.7,
+                    //   decoration: const BoxDecoration(
+                    //       color: Colors.transparent,
+                    //       image: DecorationImage(image: AssetImage(
+                    //           ImageUtils.banner1
+                    //       ),
+                    //           fit: BoxFit.cover
+                    //       )
+                    //   ),
+                    // ),
+
                     SizedBox(height: Get.height * 0.01,),
 
                     Container(
@@ -1344,18 +1349,20 @@ class _MyPost6State extends State<MyPost6> {
                       //   width: Get.width * 0.5,
                       //   child: Image.asset(ImageUtils.banner),
                       // ),
-                      Container(
-                        height: Get.height * 0.11,
-                        width: Get.width * 0.7,
-                        decoration: const BoxDecoration(
-                            color: Colors.transparent,
-                            image: DecorationImage(image: AssetImage(
-                                ImageUtils.banner1
-                            ),
-                                fit: BoxFit.cover
-                            )
-                        ),
-                      ),
+
+                      // Container(
+                      //   height: Get.height * 0.11,
+                      //   width: Get.width * 0.7,
+                      //   decoration: const BoxDecoration(
+                      //       color: Colors.transparent,
+                      //       image: DecorationImage(image: AssetImage(
+                      //           ImageUtils.banner1
+                      //       ),
+                      //           fit: BoxFit.cover
+                      //       )
+                      //   ),
+                      // ),
+
                       SizedBox(height: Get.height * 0.01,),
 
                       Container(
@@ -1750,18 +1757,18 @@ class _MyPost7State extends State<MyPost7> {
                       //   width: Get.width * 0.5,
                       //   child: Image.asset(ImageUtils.banner),
                       // ),
-                      Container(
-                        height: Get.height * 0.11,
-                        width: Get.width * 0.7,
-                        decoration: const BoxDecoration(
-                            color: Colors.transparent,
-                            image: DecorationImage(image: AssetImage(
-                                ImageUtils.banner1
-                            ),
-                                fit: BoxFit.cover
-                            )
-                        ),
-                      ),
+                      // Container(
+                      //   height: Get.height * 0.11,
+                      //   width: Get.width * 0.7,
+                      //   decoration: const BoxDecoration(
+                      //       color: Colors.transparent,
+                      //       image: DecorationImage(image: AssetImage(
+                      //           ImageUtils.banner1
+                      //       ),
+                      //           fit: BoxFit.cover
+                      //       )
+                      //   ),
+                      // ),
                       SizedBox(height: Get.height * 0.01,),
 
                       Container(
@@ -2156,18 +2163,18 @@ class _MyPost8State extends State<MyPost8> {
                       //   width: Get.width * 0.5,
                       //   child: Image.asset(ImageUtils.banner),
                       // ),
-                      Container(
-                        height: Get.height * 0.11,
-                        width: Get.width * 0.7,
-                        decoration: const BoxDecoration(
-                            color: Colors.transparent,
-                            image: DecorationImage(image: AssetImage(
-                                ImageUtils.banner1
-                            ),
-                                fit: BoxFit.cover
-                            )
-                        ),
-                      ),
+                      // Container(
+                      //   height: Get.height * 0.11,
+                      //   width: Get.width * 0.7,
+                      //   decoration: const BoxDecoration(
+                      //       color: Colors.transparent,
+                      //       image: DecorationImage(image: AssetImage(
+                      //           ImageUtils.banner1
+                      //       ),
+                      //           fit: BoxFit.cover
+                      //       )
+                      //   ),
+                      // ),
                       SizedBox(height: Get.height * 0.01,),
 
                       Container(
@@ -2562,18 +2569,18 @@ class _MyPost9State extends State<MyPost9> {
                       //   width: Get.width * 0.5,
                       //   child: Image.asset(ImageUtils.banner),
                       // ),
-                      Container(
-                        height: Get.height * 0.11,
-                        width: Get.width * 0.7,
-                        decoration: const BoxDecoration(
-                            color: Colors.transparent,
-                            image: DecorationImage(image: AssetImage(
-                                ImageUtils.banner1
-                            ),
-                                fit: BoxFit.cover
-                            )
-                        ),
-                      ),
+                      // Container(
+                      //   height: Get.height * 0.11,
+                      //   width: Get.width * 0.7,
+                      //   decoration: const BoxDecoration(
+                      //       color: Colors.transparent,
+                      //       image: DecorationImage(image: AssetImage(
+                      //           ImageUtils.banner1
+                      //       ),
+                      //           fit: BoxFit.cover
+                      //       )
+                      //   ),
+                      // ),
                       SizedBox(height: Get.height * 0.01,),
 
                       Container(
@@ -2968,18 +2975,19 @@ class _MyPost10State extends State<MyPost10> {
                       //   width: Get.width * 0.5,
                       //   child: Image.asset(ImageUtils.banner),
                       // ),
-                      Container(
-                        height: Get.height * 0.11,
-                        width: Get.width * 0.7,
-                        decoration: const BoxDecoration(
-                            color: Colors.transparent,
-                            image: DecorationImage(image: AssetImage(
-                                ImageUtils.banner1
-                            ),
-                                fit: BoxFit.cover
-                            )
-                        ),
-                      ),
+                      // Container(
+                      //   height: Get.height * 0.11,
+                      //   width: Get.width * 0.7,
+                      //   decoration: const BoxDecoration(
+                      //       color: Colors.transparent,
+                      //       image: DecorationImage(image: AssetImage(
+                      //           ImageUtils.banner1
+                      //       ),
+                      //           fit: BoxFit.cover
+                      //       )
+                      //   ),
+                      // ),
+
                       SizedBox(height: Get.height * 0.01,),
 
                       Container(

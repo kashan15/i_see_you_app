@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
             ),
             //Default theme
 
-            initialRoute: kNavBar,
+            initialRoute: kSplashScreen,
             getPages: RouteManagement.getPages(),
 
             // initialBinding: ControllerBinding(),

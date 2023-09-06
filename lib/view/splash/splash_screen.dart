@@ -47,7 +47,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
   goto()async{
      Timer(Duration(seconds: 8), () async{
-       await Get.toNamed(kHomeScreen);
+       await Get.toNamed(kNavBar);
     });
   }
   @override
